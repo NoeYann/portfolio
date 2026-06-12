@@ -1,0 +1,261 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C2 — Optimiser · Portfolio BUT Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Couleurs propres à la compétence 2 — Vert sauge */
+    .competence-banner { --banner-color: var(--color-c2); --banner-dark: var(--color-c2-dark); }
+    .ac-item__check    { background: var(--color-c2); border-color: var(--color-c2-dark); }
+    .ac-item__check::after { color: var(--color-c2-dark); }
+    .reflexive-quote   { --quote-color: var(--color-c2); }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <header>
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo">CHAFFARD-KOWALEWSKI <span>Noé-Yann</span></a>
+
+        <button class="navbar__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="navbar__links" role="list">
+          <li><a href="c1-realiser.html">C1 Réaliser</a></li>
+          <li><a href="c2-optimiser.html">C2 Optimiser</a></li>
+          <li><a href="c3-administrer.html">C3 Administrer</a></li>
+          <li><a href="c4-gerer.html">C4 Gérer</a></li>
+          <li><a href="c5-conduire.html">C5 Conduire</a></li>
+          <li><a href="c6-collaborer.html">C6 Collaborer</a></li>
+          <li><a href="projets.html">Projets</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══ CONTENU PRINCIPAL ══ -->
+  <main class="page-content">
+
+    <!-- ── Bannière ── -->
+    <div class="competence-banner">
+      <div class="container">
+        <p class="competence-banner__label">Compétence 2</p>
+        <h1 class="competence-banner__title">Optimiser des applications informatiques</h1>
+        <p class="competence-banner__subtitle">
+          Proposer des applications informatiques optimisées en fonction de critères
+          spécifiques : temps d'exécution, précision, consommation de ressources.
+        </p>
+      </div>
+    </div>
+
+    <!-- ── Présentation ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Présentation</h2>
+
+        <p style="margin-bottom: 1rem; color: var(--color-text-mute); font-size: 0.95rem;">
+          Cette compétence m'a appris à ne pas me contenter d'un code qui "fonctionne".
+          Travailler sur l'algorithmique et les structures de données m'a donné des outils
+          concrets pour raisonner sur la performance dès la conception, et pas seulement
+          en cas de problème.
+        </p>
+        <p style="color: var(--color-text-mute); font-size: 0.95rem;">
+          En BUT2, j'ai abordé des problèmes plus complexes nécessitant des choix techniques
+          justifiés, et j'ai pris conscience que ces décisions ont aussi un impact
+          environnemental et sociétal qu'il faut savoir mesurer.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── SAÉ associées ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">SAÉ associées</h2>
+
+        <div class="sae-grid">
+
+          <article class="sae-card"
+            data-title="SAÉ 1.02 — Problème du voyageur de commerce"
+            data-semester="Semestre 1"
+            data-desc="<p>Conception et comparaison d'algorithmes en C pour résoudre le problème du voyageur de commerce : trouver le chemin le plus court passant par huit villes en minimisant distance et consommation d'énergie. Réalisé en binôme.</p>"
+            data-detail="<p>La SAÉ demandait d'implémenter deux approches algorithmiques — une version non récursive puis une version récursive — pour résoudre le même problème. Elle mobilisait l'initiation au développement, l'intro architecture, l'intro système ainsi que les maths discrètes et outils fondamentaux pour les formules de calcul de distance. Par manque de temps, les dernières questions n'ont pas pu être traitées de façon exhaustive.</p>"
+            data-traces='[{"icon":"💻","title":"Trace 1 — Extrait du code source (C)","desc":"Portion du code implémentant les algorithmes de résolution.","file":"traces/trace-1.02.1.png"},{"icon":"🖥️","title":"Trace 2 — Aperçu de l&apos;exécution","desc":"Capture du terminal montrant le résultat du programme.","file":"traces/trace-1.02.2.png"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 1</span>
+            </div>
+            <h3 class="sae-card__title">SAÉ 1.02 — Problème du voyageur de commerce</h3>
+            <p class="sae-card__desc">
+              Conception et comparaison d'algorithmes en C pour résoudre le problème du
+              voyageur de commerce : trouver le chemin le plus court passant par huit villes
+              en minimisant distance et consommation d'énergie. Réalisé en binôme.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Apprentissages critiques ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Apprentissages critiques</h2>
+
+        <!-- ── Niveau 1 ── -->
+        <div class="ac-year-block">
+          <p class="ac-year-label">Niveau 1</p>
+          <ul class="ac-list">
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC1 — Analyser un problème avec méthode</strong>
+                Décomposer un problème en éléments algorithmiques simples et identifier les structures de données adaptées.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC2 — Comparer des algorithmes pour des problèmes classiques</strong>
+                Évaluer et confronter différentes approches (tris, recherches) selon leur complexité théorique et pratique.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC3 — Formaliser et mettre en œuvre des outils mathématiques pour l'informatique</strong>
+                Mobiliser les bases mathématiques nécessaires à la modélisation et à l'analyse algorithmique.
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- ── Niveau 2 ── -->
+        <div class="ac-year-block">
+          <p class="ac-year-label">Niveau 2</p>
+          <ul class="ac-list">
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC1 — Choisir des structures de données complexes adaptées au problème</strong>
+                Sélectionner et justifier l'usage de structures avancées en fonction des contraintes du problème.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC2 — Utiliser des techniques algorithmiques adaptées pour des problèmes complexes</strong>
+                Mobiliser des approches avancées (recherche opérationnelle, optimisation globale, méthodes arborescentes…) face à des problèmes non triviaux.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC3 — Comprendre les enjeux et moyens de sécurisation des données et du code</strong>
+                Identifier les vulnérabilités liées aux traitements de données et appliquer les mesures de protection adéquates.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC4 — Évaluer l'impact environnemental et sociétal des solutions proposées</strong>
+                Prendre en compte les dimensions écologiques et éthiques dans les choix algorithmiques et techniques.
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Analyse réflexive ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Analyse réflexive</h2>
+
+        <blockquote class="reflexive-quote">
+          <p>
+            Cette compétence m'a confronté à la rigueur du raisonnement algorithmique.
+            Choisir une structure de données ou une approche de résolution n'est pas anodin :
+            ces décisions ont des conséquences directes sur les performances et la maintenabilité.
+          </p>
+          <p>
+            Je souhaite approfondir les techniques d'optimisation avancées et mieux intégrer
+            les critères environnementaux dans mes choix techniques dès la phase de conception.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__block-title">Compétences</p>
+          <ul class="footer__links">
+            <li><a href="c1-realiser.html">C1 — Réaliser</a></li>
+            <li><a href="c2-optimiser.html">C2 — Optimiser</a></li>
+            <li><a href="c3-administrer.html">C3 — Administrer</a></li>
+            <li><a href="c4-gerer.html">C4 — Gérer</a></li>
+            <li><a href="c5-conduire.html">C5 — Conduire</a></li>
+            <li><a href="c6-collaborer.html">C6 — Collaborer</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__block-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets personnels</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">Portfolio BUT Informatique · Noé-Yann CHAFFARD-KOWALEWSKI · IUT de Saint-Dié-des-Vosges · 2024–2027</p>
+    </div>
+  </footer>
+
+  <div id="sae-modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="modal__header">
+        <div class="modal__header-text">
+          <div class="modal__semester"></div>
+          <h2 class="modal__title" id="modal-title"></h2>
+        </div>
+        <button class="modal__close" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal__body">
+        <div>
+          <p class="modal__section-label">Présentation</p>
+          <div class="modal__text modal__desc"></div>
+        </div>
+        <div>
+          <p class="modal__section-label">Détail &amp; contexte</p>
+          <div class="modal__text modal__detail"></div>
+        </div>
+        <hr class="modal__traces-sep" />
+        <div>
+          <p class="modal__section-label">Traces &amp; réalisations</p>
+          <div class="modal__traces"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

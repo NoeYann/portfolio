@@ -1,0 +1,293 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C3 — Administrer · Portfolio BUT Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Couleurs propres à la compétence 3 — Pêche doux */
+    .competence-banner { --banner-color: var(--color-c3); --banner-dark: var(--color-c3-dark); }
+    .ac-item__check    { background: var(--color-c3); border-color: var(--color-c3-dark); }
+    .ac-item__check::after { color: var(--color-c3-dark); }
+    .reflexive-quote   { --quote-color: var(--color-c3); }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <header>
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo">CHAFFARD-KOWALEWSKI <span>Noé-Yann</span></a>
+
+        <button class="navbar__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="navbar__links" role="list">
+          <li><a href="c1-realiser.html">C1 Réaliser</a></li>
+          <li><a href="c2-optimiser.html">C2 Optimiser</a></li>
+          <li><a href="c3-administrer.html">C3 Administrer</a></li>
+          <li><a href="c4-gerer.html">C4 Gérer</a></li>
+          <li><a href="c5-conduire.html">C5 Conduire</a></li>
+          <li><a href="c6-collaborer.html">C6 Collaborer</a></li>
+          <li><a href="projets.html">Projets</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══ CONTENU PRINCIPAL ══ -->
+  <main class="page-content">
+
+    <!-- ── Bannière ── -->
+    <div class="competence-banner">
+      <div class="container">
+        <p class="competence-banner__label">Compétence 3</p>
+        <h1 class="competence-banner__title">Administrer des systèmes informatiques communicants complexes</h1>
+        <p class="competence-banner__subtitle">
+          Installer, configurer, mettre à disposition, maintenir en conditions opérationnelles
+          des infrastructures, des services et des réseaux et optimiser le système informatique
+          d'une organisation.
+        </p>
+      </div>
+    </div>
+
+    <!-- ── Présentation ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Présentation</h2>
+
+        <p style="margin-bottom: 1rem; color: var(--color-text-mute); font-size: 0.95rem;">
+          La compétence Administrer m'a introduit à un pan de l'informatique que j'appréhendais
+          peu avant le BUT : les infrastructures. Apprendre à installer un système d'exploitation,
+          à le configurer, à le relier à un réseau et à le maintenir opérationnel m'a permis de
+          comprendre ce qui se passe "sous" les applications que l'on développe.
+        </p>
+        <p style="color: var(--color-text-mute); font-size: 0.95rem;">
+          Les travaux pratiques réseau ont été particulièrement formateurs : adressage IP,
+          configuration de services, diagnostic de pannes. J'ai pris conscience que chaque
+          choix d'infrastructure a des conséquences directes sur la disponibilité, la sécurité
+          et les performances des services exposés.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── SAÉ associées ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">SAÉ associées</h2>
+
+        <div class="sae-grid">
+
+          <!-- REMPLACER les data-* avec votre contenu réel -->
+          <article class="sae-card"
+            data-title="SAÉ 1.03 — Titre de la SAÉ"
+            data-semester="Semestre 1"
+            data-desc="<p>Mise en place d'un réseau local virtualisé comprenant plusieurs machines aux rôles distincts : serveur, client et routeur. Configuration des adresses IP, des routes statiques et des services de base pour assurer la communication entre les machines.</p>"
+            data-detail="<p>REMPLACER : ajoutez ici un détail supplémentaire sur la SAÉ — contexte, objectifs pédagogiques, compétences mobilisées, difficultés rencontrées, résultats obtenus...</p>"
+            data-traces='[{"icon":"🌐","title":"Trace 1 — Schéma réseau","desc":"Schéma de l&apos;infrastructure réseau déployée, accompagné du plan d&apos;adressage, des règles de filtrage et de la documentation des services configurés."},{"icon":"📜","title":"Trace 2 — Procédure d&apos;administration","desc":"Guide d&apos;installation et de configuration d&apos;un service rédigé pour un pair, incluant la gestion des erreurs fréquentes et les commandes de diagnostic."}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 1</span>
+            </div>
+            <h3 class="sae-card__title">SAÉ 1.03 — Titre de la SAÉ</h3>
+            <p class="sae-card__desc">
+              Mise en place d'un réseau local virtualisé comprenant plusieurs machines aux rôles
+              distincts : serveur, client et routeur. Configuration des adresses IP, des routes
+              statiques et des services de base pour assurer la communication entre les machines.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <!-- REMPLACER les data-* avec votre contenu réel -->
+          <article class="sae-card"
+            data-title="SAÉ 2.03 — Titre de la SAÉ"
+            data-semester="Semestre 2"
+            data-desc="<p>Déploiement et sécurisation d'un serveur web sous Linux. Configuration d'un certificat TLS, mise en place de règles pare-feu avec iptables et rédaction d'une procédure de sauvegarde et de restauration du service.</p>"
+            data-detail="<p>REMPLACER : ajoutez ici un détail supplémentaire sur la SAÉ — contexte, objectifs pédagogiques, compétences mobilisées, difficultés rencontrées, résultats obtenus...</p>"
+            data-traces='[{"icon":"🌐","title":"Trace 1 — Schéma réseau","desc":"Schéma de l&apos;infrastructure réseau déployée, accompagné du plan d&apos;adressage, des règles de filtrage et de la documentation des services configurés."},{"icon":"📜","title":"Trace 2 — Procédure d&apos;administration","desc":"Guide d&apos;installation et de configuration d&apos;un service rédigé pour un pair, incluant la gestion des erreurs fréquentes et les commandes de diagnostic."}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 2</span>
+            </div>
+            <h3 class="sae-card__title">SAÉ 2.03 — Titre de la SAÉ</h3>
+            <p class="sae-card__desc">
+              Déploiement et sécurisation d'un serveur web sous Linux. Configuration d'un
+              certificat TLS, mise en place de règles pare-feu avec iptables et rédaction
+              d'une procédure de sauvegarde et de restauration du service.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Apprentissages critiques ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Apprentissages critiques</h2>
+
+        <!-- ── Niveau 1 ── -->
+        <div class="ac-year-block">
+          <p class="ac-year-label">Niveau 1</p>
+          <ul class="ac-list">
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC1 — Identifier les composants des systèmes numériques</strong>
+                Reconnaître et comprendre le rôle de chaque composant matériel et logiciel
+                d'un système informatique, ainsi que leurs interactions.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC2 — Utiliser les systèmes multitâches et multiutilisateurs</strong>
+                Naviguer et opérer dans un environnement multiprogrammation, gérer les processus,
+                les droits et les sessions utilisateurs.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC3 — Installer et configurer un système d'exploitation</strong>
+                Déployer un système d'exploitation, le paramétrer selon les besoins de
+                l'organisation et assurer sa mise à jour et sa sécurisation de base.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC4 — Configurer un poste en réseau</strong>
+                Connecter une machine à un réseau local, configurer les paramètres réseau
+                et vérifier la connectivité avec les services disponibles.
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- ── Niveau 2 ── -->
+        <div class="ac-year-block">
+          <p class="ac-year-label">Niveau 2</p>
+          <ul class="ac-list">
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC1 — Concevoir et développer des applications communicantes</strong>
+                Mettre en œuvre des protocoles de communication réseau dans des applications
+                pour permettre l'échange de données entre systèmes distribués.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC2 — Utiliser des serveurs et des services réseaux virtualisés</strong>
+                Déployer et administrer des environnements virtualisés pour héberger des services
+                réseau, en garantissant leur isolation et leur disponibilité.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC3 — Sécuriser les services et données d'un système</strong>
+                Identifier les vulnérabilités d'un système et appliquer les mesures de protection
+                adaptées : pare-feu, chiffrement, contrôle d'accès et journalisation.
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Analyse réflexive ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Analyse réflexive</h2>
+
+        <blockquote class="reflexive-quote">
+          <p>
+            Cette compétence m'a appris que l'informatique ne se résume pas aux applications :
+            tout repose sur une infrastructure fiable. Comprendre les couches basses — matériel,
+            réseau, système d'exploitation — m'a donné une vision plus complète et plus solide
+            de l'architecture des systèmes que je développe.
+          </p>
+          <p>
+            J'ai encore des progrès à faire sur la virtualisation avancée et la sécurisation
+            des services exposés. Ces domaines m'intéressent particulièrement car ils sont au
+            cœur des environnements de production modernes et de plus en plus valorisés
+            en entreprise.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__block-title">Compétences</p>
+          <ul class="footer__links">
+            <li><a href="c1-realiser.html">C1 — Réaliser</a></li>
+            <li><a href="c2-optimiser.html">C2 — Optimiser</a></li>
+            <li><a href="c3-administrer.html">C3 — Administrer</a></li>
+            <li><a href="c4-gerer.html">C4 — Gérer</a></li>
+            <li><a href="c5-conduire.html">C5 — Conduire</a></li>
+            <li><a href="c6-collaborer.html">C6 — Collaborer</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__block-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets personnels</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">Portfolio BUT Informatique · Noé-Yann CHAFFARD-KOWALEWSKI · IUT de Saint-Dié-des-Vosges · 2024–2027</p>
+    </div>
+  </footer>
+
+  <div id="sae-modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="modal__header">
+        <div class="modal__header-text">
+          <div class="modal__semester"></div>
+          <h2 class="modal__title" id="modal-title"></h2>
+        </div>
+        <button class="modal__close" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal__body">
+        <div>
+          <p class="modal__section-label">Présentation</p>
+          <div class="modal__text modal__desc"></div>
+        </div>
+        <div>
+          <p class="modal__section-label">Détail &amp; contexte</p>
+          <div class="modal__text modal__detail"></div>
+        </div>
+        <hr class="modal__traces-sep" />
+        <div>
+          <p class="modal__section-label">Traces &amp; réalisations</p>
+          <div class="modal__traces"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

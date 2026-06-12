@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- REMPLACER : titre de l'onglet -->
+  <title>C1 — Réaliser · Portfolio BUT Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Couleurs propres à la compétence 1 — Bleu poudré */
+    .competence-banner { --banner-color: var(--color-c1); --banner-dark: var(--color-c1-dark); }
+    .ac-item__check    { background: var(--color-c1); border-color: var(--color-c1-dark); }
+    .ac-item__check::after { color: var(--color-c1-dark); }
+    .reflexive-quote   { --quote-color: var(--color-c1); }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <header>
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="container navbar__inner">
+        <!-- REMPLACER : votre prénom/nom -->
+        <a href="index.html" class="navbar__logo">CHAFFARD-KOWALEWSKI <span>Noé-Yann</span></a>
+
+        <button class="navbar__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="navbar__links" role="list">
+          <li><a href="c1-realiser.html">C1 Réaliser</a></li>
+          <li><a href="c2-optimiser.html">C2 Optimiser</a></li>
+          <li><a href="c3-administrer.html">C3 Administrer</a></li>
+          <li><a href="c4-gerer.html">C4 Gérer</a></li>
+          <li><a href="c5-conduire.html">C5 Conduire</a></li>
+          <li><a href="c6-collaborer.html">C6 Collaborer</a></li>
+          <li><a href="projets.html">Projets</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══ CONTENU PRINCIPAL ══ -->
+  <main class="page-content">
+
+    <!-- ── Bannière ── -->
+    <div class="competence-banner">
+      <div class="container">
+        <p class="competence-banner__label">Compétence 1</p>
+        <!-- REMPLACER : intitulé officiel de votre référentiel si différent -->
+        <h1 class="competence-banner__title">Réaliser un développement d'application</h1>
+        <p class="competence-banner__subtitle">
+          <!-- REMPLACER : une phrase de présentation personnelle de cette compétence -->
+          Développer — concevoir, coder, tester et intégrer — une solution informatique pour un client.
+        </p>
+      </div>
+    </div>
+
+    <!-- ── Présentation ── -->
+    <section class="section">
+      <div class="container">
+        <!-- REMPLACER : titre de votre présentation personnelle -->
+        <h2 class="section-title">Présentation</h2>
+
+        <!-- REMPLACER : vos deux paragraphes de présentation -->
+        <p style="margin-bottom: 1rem; color: var(--color-text-mute); font-size: 0.95rem;">
+          Cette compétence constitue le socle central de ma formation. Elle m'a permis d'acquérir
+          une vision globale du cycle de développement, depuis l'analyse des besoins fonctionnels
+          jusqu'à la livraison d'une application fonctionnelle et maintenue. J'ai pu appréhender
+          aussi bien les paradigmes orientés objet que les approches fonctionnelles, en travaillant
+          sur des langages variés tels que Java, Python et JavaScript.
+        </p>
+        <p style="color: var(--color-text-mute); font-size: 0.95rem;">
+          Au fil des SAÉ, j'ai progressivement intégré les bonnes pratiques du génie logiciel :
+          versionnement avec Git, tests unitaires, documentation claire et revue de code en équipe.
+          Ces apprentissages m'ont appris à structurer ma démarche de développement et à produire
+          un code lisible, maintenable et évolutif pour mes pairs.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── SAÉ associées ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">SAÉ associées</h2>
+
+        <div class="sae-grid">
+
+          <article class="sae-card"
+            data-title="SAÉ 1.01 — Jeu d'aventure textuelle"
+            data-semester="Semestre 1"
+            data-desc="<p>Développement en C d'un jeu d'aventure textuelle à partir d'une base fournie. Le monde est découpé en cases navigables via des commandes directement dans le terminal. Réalisé en binôme.</p>"
+            data-detail="<p>L'objectif était d'étendre une base de code C existante pour construire un monde explorable : système de déplacements directionnels, découpage en cases, interactions textuelles. Les ressources mobilisées couvraient l'initiation au développement, l'anglais technique (commentaires en anglais obligatoires) et les bases du développement web. Ce projet m'a permis de mettre en pratique les fondamentaux de la programmation impérative dans un contexte concret.</p>"
+            data-traces='[{"icon":"💻","title":"Trace 1 — Extrait du code source (C)","desc":"Portion du code gérant le système de déplacements et la structure des cases du monde.","file":"traces/trace-1.01.1.png"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 1</span>
+            </div>
+            <h3 class="sae-card__title">SAÉ 1.01 — Jeu d'aventure textuelle</h3>
+            <p class="sae-card__desc">
+              Développement en C d'un jeu d'aventure textuelle à partir d'une base fournie.
+              Le monde est découpé en cases navigables via des commandes directement dans
+              le terminal. Réalisé en binôme.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card"
+            data-title="SAÉ 2.01 — Platformer 2D"
+            data-semester="Semestre 2"
+            data-desc="<p>Développement en Java d'un jeu de plateforme type Mario à partir d'une base fournie. Ajout d'un système de combat, refonte du décor et amélioration des mécaniques de jeu. Réalisé en binôme, avec présentation orale au professeur.</p>"
+            data-detail="<p>Le projet consistait à faire évoluer un platformer existant en Java : nouveau décor, système de combat contre des monstres et paramètres de jeu retravaillés (notamment le saut). Les ressources mobilisées incluaient le développement objet, le développement d'applications avec IHM et la qualité de développement. Une présentation orale du projet à l'enseignant a conclu la SAÉ, mobilisant également les compétences en communication professionnelle.</p>"
+            data-traces='[{"icon":"☕","title":"Trace 1 — Extrait du code source (Java)","desc":"Portion du code gérant le système de combat ou l&apos;amélioration du saut.","file":"traces/trace-2.01.1.png"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 2</span>
+            </div>
+            <h3 class="sae-card__title">SAÉ 2.01 — Platformer 2D</h3>
+            <p class="sae-card__desc">
+              Développement en Java d'un jeu de plateforme type Mario à partir d'une base
+              fournie. Ajout d'un système de combat, refonte du décor et amélioration des
+              mécaniques de jeu. Réalisé en binôme, avec présentation orale au professeur.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Apprentissages critiques ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Apprentissages critiques</h2>
+
+        <!-- ── Niveau 1 ── -->
+        <div class="ac-year-block">
+          <p class="ac-year-label">Niveau 1 — Développer des applications informatiques simples</p>
+          <ul class="ac-list">
+
+            <!-- REMPLACER chaque item par un apprentissage critique de votre référentiel -->
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC1 : Implémenter des conceptions simples</strong>
+                Traduire une modélisation en code fonctionnel en respectant une architecture définie.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC2 — Élaborer des conceptions simples </strong>
+                Concevoir une solution logicielle adaptée à un besoin exprimé, avant toute phase de codage.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC3 — Faire des essais et évaluer leurs résultats en regard des spécifications</strong>
+                Tester son code de manière méthodique et vérifier la conformité aux attendus.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC4 — Développer des interfaces utilisateurs</strong>
+                Concevoir et implémenter des interfaces fonctionnelles, lisibles et adaptées à l'utilisateur final.
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- ── Niveau 2 ── -->
+        <div class="ac-year-block">
+          <p class="ac-year-label">Niveau 2 — Partir des exigences et aller jusqu'à une application complète</p>
+          <ul class="ac-list">
+
+            <!-- REMPLACER chaque item par un apprentissage critique de votre référentiel -->
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC1 — Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences </strong>
+                Traduire un cahier des charges complet en spécifications précises et les implémenter.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC2 — Appliquer des principes d'accessibilité et d'ergonomie</strong>
+                Concevoir des interfaces pensées pour tous les utilisateurs, en respectant les standards d'usage.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC3 — Adopter de bonnes pratiques de conception et de programmation</strong>
+                Produire un code lisible, maintenable et structuré selon les conventions du génie logiciel.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC4 — Vérifier et valider la qualité de l'application par les tests</strong>
+                Mettre en place une stratégie de tests rigoureuse pour garantir la fiabilité de l'application livrée.
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Analyse réflexive ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Analyse réflexive</h2>
+
+        <!-- REMPLACER par votre propre analyse -->
+        <blockquote class="reflexive-quote">
+          <p>
+            Cette compétence m'a profondément fait évoluer dans ma manière d'appréhender
+            un problème informatique. Au départ, je me concentrais avant tout sur le fait
+            que le programme fonctionne ; j'ai progressivement compris que la lisibilité
+            et la maintenabilité du code sont tout aussi importantes que son exécution correcte.
+          </p>
+          <p>
+            Les retours de mes enseignants et de mes camarades lors des revues de code ont joué
+            un rôle déterminant dans cette prise de conscience. Je souhaite continuer à développer
+            mes compétences en architecture logicielle pour produire des applications encore plus
+            robustes et évolutives.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__block-title">Compétences</p>
+          <ul class="footer__links">
+            <li><a href="c1-realiser.html">C1 — Réaliser</a></li>
+            <li><a href="c2-optimiser.html">C2 — Optimiser</a></li>
+            <li><a href="c3-administrer.html">C3 — Administrer</a></li>
+            <li><a href="c4-gerer.html">C4 — Gérer</a></li>
+            <li><a href="c5-conduire.html">C5 — Conduire</a></li>
+            <li><a href="c6-collaborer.html">C6 — Collaborer</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__block-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets personnels</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- REMPLACER : votre prénom, nom et IUT -->
+      <p class="footer__copy">Portfolio BUT Informatique · Noé-Yann CHAFFARD-KOWALEWSKI · IUT de Saint-Dié-des-Vosges · 2024–2027</p>
+    </div>
+  </footer>
+
+  <!-- ══ MODAL SAÉ — partagée par toutes les cartes de cette page ══ -->
+  <div id="sae-modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="modal__header">
+        <div class="modal__header-text">
+          <div class="modal__semester"></div>
+          <h2 class="modal__title" id="modal-title"></h2>
+        </div>
+        <button class="modal__close" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal__body">
+        <!-- Description résumée -->
+        <div>
+          <p class="modal__section-label">Présentation</p>
+          <div class="modal__text modal__desc"></div>
+        </div>
+        <!-- Détail étendu — REMPLACER via data-detail sur la carte -->
+        <div>
+          <p class="modal__section-label">Détail &amp; contexte</p>
+          <div class="modal__text modal__detail"></div>
+        </div>
+        <!-- Traces liées -->
+        <hr class="modal__traces-sep" />
+        <div>
+          <p class="modal__section-label">Traces &amp; réalisations</p>
+          <div class="modal__traces"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

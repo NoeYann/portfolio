@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C4 — Gérer · Portfolio BUT Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Couleurs propres à la compétence 4 — Lavande */
+    .competence-banner { --banner-color: var(--color-c4); --banner-dark: var(--color-c4-dark); }
+    .ac-item__check    { background: var(--color-c4); border-color: var(--color-c4-dark); }
+    .ac-item__check::after { color: var(--color-c4-dark); }
+    .reflexive-quote   { --quote-color: var(--color-c4); }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <header>
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo">CHAFFARD-KOWALEWSKI <span>Noé-Yann</span></a>
+
+        <button class="navbar__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="navbar__links" role="list">
+          <li><a href="c1-realiser.html">C1 Réaliser</a></li>
+          <li><a href="c2-optimiser.html">C2 Optimiser</a></li>
+          <li><a href="c3-administrer.html">C3 Administrer</a></li>
+          <li><a href="c4-gerer.html">C4 Gérer</a></li>
+          <li><a href="c5-conduire.html">C5 Conduire</a></li>
+          <li><a href="c6-collaborer.html">C6 Collaborer</a></li>
+          <li><a href="projets.html">Projets</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══ CONTENU PRINCIPAL ══ -->
+  <main class="page-content">
+
+    <!-- ── Bannière ── -->
+    <div class="competence-banner">
+      <div class="container">
+        <p class="competence-banner__label">Compétence 4</p>
+        <h1 class="competence-banner__title">Gérer des données de l'information</h1>
+        <p class="competence-banner__subtitle">
+          Concevoir, gérer, administrer et exploiter les données de l'entreprise et mettre
+          à disposition toutes les informations pour un bon pilotage de l'entreprise.
+        </p>
+      </div>
+    </div>
+
+    <!-- ── Présentation ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Présentation</h2>
+
+        <p style="margin-bottom: 1rem; color: var(--color-text-mute); font-size: 0.95rem;">
+          Les données sont au cœur de la quasi-totalité des applications que j'ai développées.
+          Cette compétence m'a donné les bases pour concevoir des modèles relationnels cohérents,
+          les interroger efficacement et les sécuriser.
+        </p>
+        <p style="color: var(--color-text-mute); font-size: 0.95rem;">
+          En BUT2, j'ai abordé des problématiques plus avancées : optimisation des requêtes,
+          gestion des droits d'accès et restitution de données hétérogènes. Ces aspects m'ont
+          fait prendre conscience que la qualité d'une base de données conditionne directement
+          la fiabilité de toute l'application qui repose dessus.
+        </p>
+      </div>
+    </section>
+
+    <!-- ── SAÉ associées ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">SAÉ associées</h2>
+
+        <div class="sae-grid">
+
+          <article class="sae-card"
+            data-title="SAÉ 1.04 — Base de données"
+            data-semester="Semestre 1"
+            data-desc="<p>Conception et mise en place d'une base de données relationnelle à partir d'un cahier des charges. Modélisation MCD puis MLD, alimentation et interrogation de la base via MySQL Workbench. Réalisé en binôme.</p>"
+            data-detail="<p>Le projet couvrait l'ensemble du cycle de conception d'une base de données : analyse du cahier des charges, élaboration du MCD, transformation en MLD, alimentation de la base et requêtes SQL (INSERT, UPDATE, DELETE). Les ressources mobilisées étaient principalement la conception de bases de données (R1.05) et l'économie numérique et durable (R1.09). La partie modélisation a été bien maîtrisée ; les requêtes SQL ont nécessité plus de travail et de révisions.</p>"
+            data-traces='[{"icon":"🗃️","title":"Trace 1 — Modèle Conceptuel de Données","desc":"Représentation du MCD réalisé lors de la SAÉ.","file":"traces/trace-1.04.1.png"},{"icon":"🔗","title":"Trace 2 — Passage du MCD au MLD","desc":"Modélisation logique dérivée du MCD.","file":"traces/trace-1.04.2.png"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 1</span>
+            </div>
+            <h3 class="sae-card__title">SAÉ 1.04 — Base de données</h3>
+            <p class="sae-card__desc">
+              Conception et mise en place d'une base de données relationnelle à partir d'un
+              cahier des charges. Modélisation MCD puis MLD, alimentation et interrogation
+              de la base via MySQL Workbench. Réalisé en binôme.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card"
+            data-title="SAÉ 2.04 — Exploitation et analyse de données"
+            data-semester="Semestre 2"
+            data-desc="<p>Exploitation d'une base de données existante couplée à une analyse statistique des données. Mobilisation de plusieurs ressources transversales : SQL, statistiques, gestion de projet et anglais. Réalisé en binôme.</p>"
+            data-detail="<p>Le travail s'appuyait sur quatre ressources : exploitation d'une base de données (R2.06), outils numériques pour les statistiques descriptives (R2.08), gestion de projet et des organisations (R2.10) et anglais (R2.12). La SAÉ a permis de croiser analyse de données et visualisation statistique, avec génération de graphiques et calculs de statistiques descriptives à partir des données extraites.</p>"
+            data-traces='[{"icon":"📊","title":"Trace 1 — Graphiques d&apos;analyse de données","desc":"Visualisations générées à partir des données extraites de la base.","file":"traces/trace-2.04.2.png"},{"icon":"📈","title":"Trace 2 — Statistiques d&apos;analyse de données","desc":"Résultats des calculs statistiques descriptifs réalisés sur les données.","file":"traces/trace-2.04.3.png"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 2</span>
+            </div>
+            <h3 class="sae-card__title">SAÉ 2.04 — Exploitation et analyse de données</h3>
+            <p class="sae-card__desc">
+              Exploitation d'une base de données existante couplée à une analyse statistique
+              des données. Mobilisation de plusieurs ressources transversales : SQL,
+              statistiques, gestion de projet et anglais. Réalisé en binôme.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Apprentissages critiques ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Apprentissages critiques</h2>
+
+        <!-- ── Niveau 1 ── -->
+        <div class="ac-year-block">
+          <p class="ac-year-label">Niveau 1</p>
+          <ul class="ac-list">
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC1 — Mettre à jour et interroger une base de données relationnelle</strong>
+                Manipuler une base existante via des requêtes directes ou au travers d'une application.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC2 — Visualiser des données</strong>
+                Produire des représentations claires et exploitables à partir de données brutes.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC3 — Concevoir une base de données relationnelle à partir d'un cahier des charges</strong>
+                Modéliser et structurer une base de données en réponse à un besoin client formalisé.
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- ── Niveau 2 ── -->
+        <div class="ac-year-block">
+          <p class="ac-year-label">Niveau 2</p>
+          <ul class="ac-list">
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC1 — Optimiser les modèles de données de l'entreprise</strong>
+                Améliorer les structures existantes pour gagner en performance et en cohérence.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC2 — Assurer la confidentialité des données</strong>
+                Garantir l'intégrité et la sécurité des données stockées et échangées.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC3 — Organiser la restitution de données à travers la programmation et la visualisation</strong>
+                Concevoir des interfaces et des requêtes permettant d'exploiter efficacement les données.
+              </div>
+            </li>
+
+            <li class="ac-item">
+              <span class="ac-item__check" aria-hidden="true"></span>
+              <div class="ac-item__text">
+                <strong>AC4 — Manipuler des données hétérogènes</strong>
+                Intégrer et traiter des données provenant de sources et de formats variés.
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Analyse réflexive ── -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Analyse réflexive</h2>
+
+        <blockquote class="reflexive-quote">
+          <p>
+            Concevoir une base de données m'a appris que les erreurs de modélisation en amont
+            coûtent très cher à corriger une fois l'application en production. La phase de
+            conception mérite autant d'attention que le développement lui-même.
+          </p>
+          <p>
+            Je veux approfondir l'optimisation des requêtes complexes et mieux maîtriser
+            la gestion de données hétérogènes, un enjeu de plus en plus présent dans les
+            projets réels.
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__block-title">Compétences</p>
+          <ul class="footer__links">
+            <li><a href="c1-realiser.html">C1 — Réaliser</a></li>
+            <li><a href="c2-optimiser.html">C2 — Optimiser</a></li>
+            <li><a href="c3-administrer.html">C3 — Administrer</a></li>
+            <li><a href="c4-gerer.html">C4 — Gérer</a></li>
+            <li><a href="c5-conduire.html">C5 — Conduire</a></li>
+            <li><a href="c6-collaborer.html">C6 — Collaborer</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__block-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets personnels</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer__copy">Portfolio BUT Informatique · Noé-Yann CHAFFARD-KOWALEWSKI · IUT de Saint-Dié-des-Vosges · 2024–2027</p>
+    </div>
+  </footer>
+
+  <div id="sae-modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="modal__header">
+        <div class="modal__header-text">
+          <div class="modal__semester"></div>
+          <h2 class="modal__title" id="modal-title"></h2>
+        </div>
+        <button class="modal__close" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal__body">
+        <div>
+          <p class="modal__section-label">Présentation</p>
+          <div class="modal__text modal__desc"></div>
+        </div>
+        <div>
+          <p class="modal__section-label">Détail &amp; contexte</p>
+          <div class="modal__text modal__detail"></div>
+        </div>
+        <hr class="modal__traces-sep" />
+        <div>
+          <p class="modal__section-label">Traces &amp; réalisations</p>
+          <div class="modal__traces"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

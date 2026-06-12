@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projets personnels · Portfolio BUT Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Couleurs propres à la page projets */
+    .projects-header__accent {
+      display: inline-block;
+      width: 40px;
+      height: 3px;
+      background: var(--color-proj);
+      border-radius: 2px;
+      margin-bottom: 1rem;
+    }
+
+    /* Section "En cours" */
+    .section-wip {
+      padding-bottom: var(--space-xl);
+    }
+
+    .wip-card-wrapper {
+      max-width: 520px;
+    }
+
+    /* Couleurs des thumbnails placeholder */
+    .thumb--violet  { background: var(--color-c4); }
+    .thumb--blue    { background: var(--color-c1); }
+    .thumb--green   { background: var(--color-c2); }
+    .thumb--peach   { background: var(--color-c3); }
+    .thumb--teal    { background: var(--color-proj); }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══ NAVBAR ══ -->
+  <header>
+    <nav class="navbar" aria-label="Navigation principale">
+      <div class="container navbar__inner">
+        <!-- REMPLACER : votre prénom/nom -->
+        <a href="index.html" class="navbar__logo">CHAFFARD-KOWALEWSKI <span>Noé-Yann</span></a>
+
+        <button class="navbar__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="navbar__links" role="list">
+          <li><a href="c1-realiser.html">C1 Réaliser</a></li>
+          <li><a href="c2-optimiser.html">C2 Optimiser</a></li>
+          <li><a href="c3-administrer.html">C3 Administrer</a></li>
+          <li><a href="c4-gerer.html">C4 Gérer</a></li>
+          <li><a href="c5-conduire.html">C5 Conduire</a></li>
+          <li><a href="c6-collaborer.html">C6 Collaborer</a></li>
+          <li><a href="projets.html">Projets</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ══ CONTENU PRINCIPAL ══ -->
+  <main class="page-content">
+
+    <!-- ── En-tête de page ── -->
+    <div class="projects-header">
+      <div class="container">
+        <span class="projects-header__accent" aria-hidden="true"></span>
+        <!-- REMPLACER : titre et sous-titre si besoin -->
+        <h1 class="projects-header__title">Mes projets personnels</h1>
+        <p class="projects-header__subtitle">
+          Réalisations hors cursus, explorations techniques et expérimentations en solo ou en duo.
+        </p>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         SECTION "EN COURS" — Projet mis en avant
+         ══════════════════════════════════════════ -->
+    <section class="section section-wip">
+      <div class="container">
+        <h2 class="section-title">En cours</h2>
+
+        <div class="wip-card-wrapper">
+          <!-- REMPLACER : votre projet en cours -->
+          <article class="project-card project-featured">
+
+            <!-- Thumbnail colorée placeholder -->
+            <div class="project-card__thumb thumb--teal" aria-hidden="true">🚧</div>
+
+            <div class="project-card__body">
+              <div>
+                <span class="badge-wip">En développement</span>
+              </div>
+
+              <!-- REMPLACER : titre du projet -->
+              <h3 class="project-card__title">Projet en cours — Titre</h3>
+
+              <!-- REMPLACER : technologies utilisées -->
+              <div class="project-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">React</span>
+              </div>
+
+              <!-- REMPLACER : description du projet -->
+              <p class="project-card__desc">
+                Description du projet en cours de développement. Expliquez ici l'objectif
+                du projet, les technologies choisies et ce qui vous a motivé à le démarrer.
+                Mentionnez l'état d'avancement actuel et les prochaines étapes prévues.
+              </p>
+
+              <!-- Bouton désactivé tant que le projet n'est pas terminé -->
+              <button class="btn btn--disabled" disabled>En cours…</button>
+            </div>
+
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════
+         GRILLE DE PROJETS — 4 cartes placeholder
+         ══════════════════════════════════════════ -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Projets terminés</h2>
+
+        <div class="projects-grid">
+
+          <!-- ── Projet 1 — REMPLACER ── -->
+          <article class="project-card">
+            <div class="project-card__thumb thumb--blue" aria-hidden="true">💡</div>
+            <div class="project-card__body">
+              <!-- REMPLACER : technologies -->
+              <div class="project-card__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+              <!-- REMPLACER : titre -->
+              <h3 class="project-card__title">Projet 1 — Titre</h3>
+              <!-- REMPLACER : description -->
+              <p class="project-card__desc">
+                Description courte du projet. Expliquez la problématique résolue, les
+                fonctionnalités principales et les apprentissages réalisés au cours
+                de ce développement personnel.
+              </p>
+              <!-- REMPLACER : ajouter l'URL réelle et retirer btn--disabled -->
+              <a href="#" class="btn btn--disabled" aria-disabled="true">Voir le projet</a>
+            </div>
+          </article>
+
+          <!-- ── Projet 2 — REMPLACER ── -->
+          <article class="project-card">
+            <div class="project-card__thumb thumb--green" aria-hidden="true">🌱</div>
+            <div class="project-card__body">
+              <!-- REMPLACER : technologies -->
+              <div class="project-card__tags">
+                <span class="tag">Python</span>
+                <span class="tag">SQLite</span>
+              </div>
+              <!-- REMPLACER : titre -->
+              <h3 class="project-card__title">Projet 2 — Titre</h3>
+              <!-- REMPLACER : description -->
+              <p class="project-card__desc">
+                Script ou application développé pour automatiser une tâche répétitive
+                du quotidien. Présentation de la démarche, des difficultés rencontrées
+                et des solutions retenues pour les surmonter.
+              </p>
+              <a href="#" class="btn btn--disabled" aria-disabled="true">Voir le projet</a>
+            </div>
+          </article>
+
+          <!-- ── Projet 3 — REMPLACER ── -->
+          <article class="project-card">
+            <div class="project-card__thumb thumb--violet" aria-hidden="true">🎮</div>
+            <div class="project-card__body">
+              <!-- REMPLACER : technologies -->
+              <div class="project-card__tags">
+                <span class="tag">Java</span>
+                <span class="tag">JavaFX</span>
+              </div>
+              <!-- REMPLACER : titre -->
+              <h3 class="project-card__title">Projet 3 — Titre</h3>
+              <!-- REMPLACER : description -->
+              <p class="project-card__desc">
+                Petit jeu ou application graphique développé pour explorer un framework
+                ou une technologie en dehors du cadre pédagogique. Résultat d'une curiosité
+                personnelle et d'une envie d'expérimenter.
+              </p>
+              <a href="#" class="btn btn--disabled" aria-disabled="true">Voir le projet</a>
+            </div>
+          </article>
+
+          <!-- ── Projet 4 — REMPLACER ── -->
+          <article class="project-card">
+            <div class="project-card__thumb thumb--peach" aria-hidden="true">🔧</div>
+            <div class="project-card__body">
+              <!-- REMPLACER : technologies -->
+              <div class="project-card__tags">
+                <span class="tag">Bash</span>
+                <span class="tag">Linux</span>
+              </div>
+              <!-- REMPLACER : titre -->
+              <h3 class="project-card__title">Projet 4 — Titre</h3>
+              <!-- REMPLACER : description -->
+              <p class="project-card__desc">
+                Ensemble de scripts d'automatisation ou de configuration pour personnaliser
+                et optimiser un environnement de travail. Partage de la démarche et
+                des outils retenus.
+              </p>
+              <a href="#" class="btn btn--disabled" aria-disabled="true">Voir le projet</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══ FOOTER ══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <p class="footer__block-title">Compétences</p>
+          <ul class="footer__links">
+            <li><a href="c1-realiser.html">C1 — Réaliser</a></li>
+            <li><a href="c2-optimiser.html">C2 — Optimiser</a></li>
+            <li><a href="c3-administrer.html">C3 — Administrer</a></li>
+            <li><a href="c4-gerer.html">C4 — Gérer</a></li>
+            <li><a href="c5-conduire.html">C5 — Conduire</a></li>
+            <li><a href="c6-collaborer.html">C6 — Collaborer</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__block-title">Navigation</p>
+          <ul class="footer__links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projets.html">Projets personnels</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- REMPLACER : votre prénom, nom et IUT -->
+      <p class="footer__copy">Portfolio BUT Informatique · Noé-Yann CHAFFARD-KOWALEWSKI · IUT de Saint-Dié-des-Vosges · 2024–2027</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

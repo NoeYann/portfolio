@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- REMPLACER : titre de l'onglet -->
+  <title>Noé-Yann CHAFFARD-KOWALEWSKI — Portfolio BUT Informatique</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Lucide Icons — SVG inline via CDN, aucun téléchargement requis -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Styles spécifiques à la page d'accueil -->
+  <style>
+    /* Fond très légèrement teinté sur le hero */
+    body { background: var(--color-bg); }
+
+    /* Séparateur visuel entre hero et grille */
+    .nav-grid-section {
+      border-top: 1px solid var(--color-border);
+    }
+
+    /* Titre de section au-dessus de la grille */
+    .nav-grid-section__label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-text-mute);
+      margin-bottom: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════
+       HERO — Section plein écran
+       ══════════════════════════════════ -->
+  <main class="page-content">
+
+    <section class="hero" style="position: relative; overflow: hidden;">
+
+      <!-- Filigrane décoratif — non interactif, déplacé par parallaxe via main.js -->
+      <span class="hero-watermark" aria-hidden="true">CHAFFARD-KOWALEWSKI</span>
+
+      <!-- Zone HAUT : sur-titre + trait -->
+      <div class="hero__top" style="position: relative; z-index: 1;">
+        <p class="hero__eyebrow">BUT Informatique · Promotion 2024–2026</p>
+        <hr class="hero__eyebrow-line" />
+      </div>
+
+      <!-- Zone CENTRE : prénom + sous-titre -->
+      <div class="hero__center" style="position: relative; z-index: 1;">
+        <p class="hero__firstname">Noé-Yann</p>
+        <p class="hero__subtitle">Étudiant en réalisation d'applications : conception, développement, validation</p>
+      </div>
+
+      <!-- Zone BAS : bouton scroll -->
+      <div class="hero__bottom" style="position: relative; z-index: 1;">
+        <span class="hero__scroll" role="button" aria-label="Défiler vers le contenu">Découvrir</span>
+        <span class="hero__scroll-arrow" aria-hidden="true">↓</span>
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════════════════
+         GRILLE DE NAVIGATION CENTRALE
+         ══════════════════════════════════ -->
+    <section class="nav-grid-section">
+      <div class="container">
+        <p class="nav-grid-section__label">Compétences & projets</p>
+
+        <nav class="nav-grid" aria-label="Navigation principale">
+
+          <!-- ── Compétence 1 ── -->
+          <a href="c1-realiser.html" class="nav-card nav-card--c1">
+            <div class="nav-card__icon-wrap" aria-hidden="true">
+              <i data-lucide="code-2"></i>
+            </div>
+            <span class="nav-card__number">Compétence 1</span>
+            <span class="nav-card__title">Réaliser un développement</span>
+            <span class="nav-card__desc">Conception et développement d'applications</span>
+          </a>
+
+          <!-- ── Compétence 2 ── -->
+          <a href="c2-optimiser.html" class="nav-card nav-card--c2">
+            <div class="nav-card__icon-wrap" aria-hidden="true">
+              <i data-lucide="gauge"></i>
+            </div>
+            <span class="nav-card__number">Compétence 2</span>
+            <span class="nav-card__title">Optimiser des applications</span>
+            <span class="nav-card__desc">Analyse et amélioration des performances</span>
+          </a>
+
+          <!-- ── Compétence 3 ── -->
+          <a href="c3-administrer.html" class="nav-card nav-card--c3">
+            <div class="nav-card__icon-wrap" aria-hidden="true">
+              <i data-lucide="server"></i>
+            </div>
+            <span class="nav-card__number">Compétence 3</span>
+            <span class="nav-card__title">Administrer des systèmes</span>
+            <span class="nav-card__desc">Réseaux et systèmes communicants complexes</span>
+          </a>
+
+          <!-- ── Compétence 4 ── -->
+          <a href="c4-gerer.html" class="nav-card nav-card--c4">
+            <div class="nav-card__icon-wrap" aria-hidden="true">
+              <i data-lucide="database"></i>
+            </div>
+            <span class="nav-card__number">Compétence 4</span>
+            <span class="nav-card__title">Gérer des données</span>
+            <span class="nav-card__desc">Bases de données et gestion de l'information</span>
+          </a>
+
+          <!-- ── Compétence 5 ── -->
+          <a href="c5-conduire.html" class="nav-card nav-card--c5">
+            <div class="nav-card__icon-wrap" aria-hidden="true">
+              <i data-lucide="clipboard-list"></i>
+            </div>
+            <span class="nav-card__number">Compétence 5</span>
+            <span class="nav-card__title">Conduire un projet</span>
+            <span class="nav-card__desc">Gestion de projet et méthodologies agiles</span>
+          </a>
+
+          <!-- ── Compétence 6 ── -->
+          <a href="c6-collaborer.html" class="nav-card nav-card--c6">
+            <div class="nav-card__icon-wrap" aria-hidden="true">
+              <i data-lucide="users"></i>
+            </div>
+            <span class="nav-card__number">Compétence 6</span>
+            <span class="nav-card__title">Collaborer en équipe</span>
+            <span class="nav-card__desc">Travail en équipe et communication</span>
+          </a>
+
+          <!-- ── Projets personnels ── -->
+          <a href="projets.html" class="nav-card nav-card--proj">
+            <div class="nav-card__icon-wrap" aria-hidden="true">
+              <i data-lucide="rocket"></i>
+            </div>
+            <span class="nav-card__number">Perso</span>
+            <span class="nav-card__title">Projets personnels</span>
+            <span class="nav-card__desc">Réalisations hors cursus et explorations</span>
+          </a>
+
+          <!-- ── Carte placeholder / À propos ──
+               REMPLACER ou supprimer selon vos besoins -->
+          <div class="nav-card nav-card--placeholder" style="opacity: 0.45; cursor: default;" aria-hidden="true">
+            <div class="nav-card__icon-wrap">
+              <i data-lucide="user"></i>
+            </div>
+            <span class="nav-card__number">À venir</span>
+            <span class="nav-card__title">À propos</span>
+            <span class="nav-card__desc">Page en cours de rédaction</span>
+          </div>
+
+        </nav>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
