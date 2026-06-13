@@ -85,7 +85,7 @@
             data-semester="Semestre 1"
             data-desc="<p>Conception et comparaison d'algorithmes en C pour résoudre le problème du voyageur de commerce : trouver le chemin le plus court passant par huit villes en minimisant distance et consommation d'énergie. Réalisé en binôme.</p>"
             data-detail="<p>La SAÉ demandait d'implémenter deux approches algorithmiques — une version non récursive puis une version récursive — pour résoudre le même problème. Elle mobilisait l'initiation au développement, l'intro architecture, l'intro système ainsi que les maths discrètes et outils fondamentaux pour les formules de calcul de distance. Par manque de temps, les dernières questions n'ont pas pu être traitées de façon exhaustive.</p>"
-            data-traces='[{"icon":"💻","title":"Trace 1 — Extrait du code source (C)","desc":"Portion du code implémentant les algorithmes de résolution.","file":"traces/trace-1.02.1.png"},{"icon":"🖥️","title":"Trace 2 — Aperçu de l&apos;exécution","desc":"Capture du terminal montrant le résultat du programme.","file":"traces/trace-1.02.2.png"}]'>
+            data-traces='[{"icon":"code","title":"Trace 1 — Extrait du code source (C)","desc":"Portion du code implémentant les algorithmes de résolution.","file":"traces/trace-1.02.1.png"},{"icon":"monitor","title":"Trace 2 — Aperçu de l&apos;exécution","desc":"Capture du terminal montrant le résultat du programme.","file":"traces/trace-1.02.2.png"}]'>
             <div class="sae-card__semester">
               <span class="tag">Semestre 1</span>
             </div>
@@ -103,7 +103,7 @@
             data-semester="Semestre 3"
             data-desc="<p>Cryptanalyse d'un chiffrement RSA intercepté à l'aide de la méthode de Wiener : retrouver la clé privée, factoriser le module et déchiffrer un message chiffré via le développement en fractions continues. Réalisé en trinôme, avec rendu d'un rapport PDF détaillant la démarche.</p>"
             data-detail="<p>L'exercice partait d'une clé publique (c, n) et d'un message chiffré interceptés dans le contexte d'une élection sécurisée par RSA. Il s'agissait d'appliquer la méthode de Wiener : développer c/n en fractions continues, calculer les réduites, déterminer la clé privée d via la relation de Bézout (cd − km = 1), factoriser n = pq, puis déchiffrer le message. Deux jeux de données étaient à traiter. La ressource mobilisée était R3.09 Cryptographie et sécurité, qui ancre directement cet exercice dans l'AC3 du niveau 2 de C2 : comprendre les enjeux et moyens de sécurisation des données.</p>"
-            data-traces='[{"icon":"🔐","title":"Trace 1 — Tableau des convergents (fractions continues)","desc":"Extrait du rapport montrant le développement en fractions continues de c/n et le tableau des convergents permettant d&apos;identifier la clé privée d.","file":"traces/trace-s3-c2-1.png"}]'>
+            data-traces='[{"icon":"lock","title":"Trace 1 — Tableau des convergents (fractions continues)","desc":"Extrait du rapport montrant le développement en fractions continues de c/n et le tableau des convergents permettant d&apos;identifier la clé privée d.","file":"traces/trace-s3-c2-1.png"}]'>
             <div class="sae-card__semester">
               <span class="tag">Semestre 3</span>
             </div>
@@ -121,7 +121,7 @@
             data-semester="Semestre 3"
             data-desc="<p>Modélisation probabiliste d'un système de surbooking pour un club de location de bateaux à l'aide de la loi binomiale puis de l'approximation normale. Calcul du nombre optimal de réservations maximisant la recette moyenne. Réalisé en trinôme avec rendu d'un rapport PDF.</p>"
             data-detail="<p>L'exercice modélisait le comportement aléatoire des clients d'un club nautique (présence/absence) via une loi binomiale B(n,p). Deux parties : sans surbooking d'abord (calcul de probabilités, espérance, recette moyenne), puis avec surbooking (optimisation du nombre de réservations n₀ maximisant E(Rn), avec contraintes de remboursement t et dédommagement d). La deuxième partie mobilisait l'approximation normale avec correction de continuité. Deux jeux de données étaient à traiter (m=25/p=0,88 et m=105/p=0,93). La ressource mobilisée était R3.08 Probabilités, qui ancre cet exercice dans l'AC2 du niveau 2 de C2 : utiliser des techniques algorithmiques adaptées pour des problèmes complexes.</p>"
-            data-traces='[{"icon":"📈","title":"Trace 1 — Graphique E(Rn)","desc":"Graphique de l&apos;évolution de la recette moyenne espérée E(Rn) en fonction du nombre de réservations n, illustrant l&apos;optimum de surbooking n₀.","file":"traces/trace-s3-c2-2.png"}]'>
+            data-traces='[{"icon":"trending-up","title":"Trace 1 — Graphique E(Rn)","desc":"Graphique de l&apos;évolution de la recette moyenne espérée E(Rn) en fonction du nombre de réservations n, illustrant l&apos;optimum de surbooking n₀.","file":"traces/trace-s3-c2-2.png"}]'>
             <div class="sae-card__semester">
               <span class="tag">Semestre 3</span>
             </div>
@@ -139,7 +139,7 @@
             data-semester="Semestre 4"
             data-desc="<p>Construction d'automates finis déterministes minimaux reconnaissant les entiers écrits en base b congrus à k modulo n. Vérification de la minimalité par la méthode de Nerode et représentation graphique. Réalisé en trinôme (groupe 9, jeux de données b=6/n=2/k=0 et b=2/n=3/k=2).</p>"
             data-detail="<p>L'exercice demandait de construire, pour deux jeux de paramètres (b,n,k), un automate fini déterministe minimal reconnaissant les entiers x en base b vérifiant x ≡ k (mod n). La table de transitions était construite à partir de la formule générale δ(r,c) = b×r + c mod n. La minimalité de l'automate était ensuite vérifiée par la méthode de Nerode : construction du tableau de partition, détermination des classes d'équivalence et renommage des états. Le langage reconnu était déterminé par la méthode du départ. La ressource mobilisée était R4.A.12 Automates et langages, ancrant cet exercice dans l'AC1 et AC2 du niveau 2 de C2.</p>"
-            data-traces='[{"icon":"🔄","title":"Trace 1 — Méthode de Nerode","desc":"Tableau de la méthode de Nerode montrant la partition des états et la vérification de la minimalité de l&apos;automate construit.","file":"traces/trace-s4-c2-2.png"}]'>
+            data-traces='[{"icon":"refresh-cw","title":"Trace 1 — Méthode de Nerode","desc":"Tableau de la méthode de Nerode montrant la partition des états et la vérification de la minimalité de l&apos;automate construit.","file":"traces/trace-s4-c2-2.png"}]'>
             <div class="sae-card__semester">
               <span class="tag">Semestre 4</span>
             </div>
