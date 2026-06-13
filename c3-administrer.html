@@ -197,10 +197,9 @@
             data-semester="Stage S4"
             data-desc="<p>Administration d'un serveur distant Linux dans un laboratoire de recherche : connexion SSH via VPN (EduVPN), port forwarding avec Bitvise SSH, synchronisation SFTP avec VS Code, sessions graphiques X2GO. Déploiement de l'interface web sur serveur de calcul distant. Projet individuel.</p>"
             data-detail="<p>L&apos;environnement de travail imposait une infrastructure distante : connexion VPN obligatoire, accès SSH au serveur de calcul, trois ports forwardés simultanément (8000 frontend, 8080 API, 2222 VS Code). La synchronisation du code se faisait via SFTP. Le déploiement sur le serveur nécessitait de comprendre les implications d&apos;un développement sur machine distante — notamment la problématique des appels API depuis le navigateur client vers un serveur Uvicorn distant, résolue par un second port forwarding. Cette expérience m&apos;a confronté concrètement à l&apos;administration réseau en conditions réelles.</p>"
-            data-traces='[{"icon":"🔌","title":"Trace 1 — Configuration Bitvise SSH","desc":"Capture de la configuration des ports dans Bitvise SSH montrant les trois redirections de ports actives (frontend, API, VS Code).","file":"traces/trace-stage-c3-1.png"},{"icon":"📄","title":"Rapport de stage","desc":"Rapport de stage complet au LEAD/CNRS — Noé-Yann Chaffard-Kowalewski.","file":"traces/Rapport_de_stage_au_LEAD_-_Noé-Yann_Chaffard-Kowalewski.pdf"}]'>
+            data-traces='[{"icon":"🔌","title":"Trace 1 — Configuration Bitvise SSH","desc":"Capture de la configuration des ports dans Bitvise SSH montrant les trois redirections de ports actives (frontend, API, VS Code).","file":"traces/trace-stage-c3-1.png"},{"icon":"📄","title":"Rapport de stage","desc":"Rapport de stage complet au LEAD/CNRS — Noé-Yann Chaffard-Kowalewski.","file":"traces/Rapport de stage au LEAD - Noé-Yann Chaffard-Kowalewski.pdf"}]'>
             <div class="sae-card__semester">
-              <span class="tag">Stage S4</span>
-              <span class="tag tag--stage">Stage</span>
+              <span class="tag tag--stage">Stage S4</span>
             </div>
             <h3 class="sae-card__title">Stage LEAD/CNRS — Administration serveur distant Linux</h3>
             <p class="sae-card__desc">
@@ -330,10 +329,21 @@
           </p>
           <p>
             Si c'était à refaire, je passerais beaucoup plus de temps à pratiquer en dehors des
-            séances — c'est le seul moyen de vraiment ancrer des compétences aussi techniques.
-            Mon objectif pour la suite est de revoir les bases de la programmation système :
-            processus, appels système, descripteurs de fichiers. Sans ces fondamentaux, Docker
-            et les services réseaux restent des boîtes noires.
+            séances. Le stage au LEAD m'a justement donné cette pratique — et de façon bien plus
+            concrète que je ne l'aurais imaginé. Travailler 8 semaines sur un serveur Linux distant
+            sans interface graphique, uniquement en ligne de commande, m'a rendu nettement plus à
+            l'aise avec Linux et le terminal. J'ai même écrit un script Bash fonctionnel qui avait
+            du sens dans un vrai projet. La mise en place de SSH, VPN, port forwarding et SFTP m'a
+            permis de comprendre concrètement ce que font ces protocoles — là où les cours
+            restaient abstraits. Le développement de l'API FastAPI avec Uvicorn et subprocess m'a
+            aussi aidé à saisir comment des services communiquent réellement entre eux, ce qui fait
+            directement écho à AC1 de C3.
+          </p>
+          <p>
+            Il me reste l'objectif le plus difficile : revoir les bases de la programmation système
+            — processus, appels système, descripteurs de fichiers. Le stage n'a pas comblé ce
+            manque, mais il a prouvé que la pratique intensive est ce qui fonctionne le mieux pour
+            moi sur cette compétence.
           </p>
         </blockquote>
       </div>

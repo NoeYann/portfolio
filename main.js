@@ -125,7 +125,39 @@
               '<p class="modal__trace-desc">'  + t.desc  + '</p>' +
             '</div>';
           if (t.file) {
-            item.addEventListener('click', function () { window.open(t.file, '_blank'); });
+            item.addEventListener('click', (function (file) {
+              return function () {
+                if (file.toLowerCase().endsWith('.pdf')) {
+                  window.open(file, '_blank');
+                } else {
+                  var ov = document.createElement('div');
+                  ov.id = 'trace-overlay';
+                  ov.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.85);display:flex;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;';
+
+                  var img = document.createElement('img');
+                  img.src = file;
+                  img.style.cssText = 'max-width:90vw;max-height:90vh;object-fit:contain;border-radius:8px;box-shadow:0 8px 32px rgba(0,0,0,0.5);';
+
+                  var btn = document.createElement('button');
+                  btn.textContent = '✕';
+                  btn.style.cssText = 'position:absolute;top:1.5rem;right:1.5rem;background:white;border:none;border-radius:50%;width:2rem;height:2rem;cursor:pointer;font-size:1rem;';
+
+                  function closeOverlay() {
+                    if (ov.parentNode) ov.parentNode.removeChild(ov);
+                    document.removeEventListener('keydown', onKey);
+                  }
+                  function onKey(e) { if (e.key === 'Escape') closeOverlay(); }
+
+                  ov.addEventListener('click', function (e) { if (e.target === ov) closeOverlay(); });
+                  btn.addEventListener('click', function (e) { e.stopPropagation(); closeOverlay(); });
+                  document.addEventListener('keydown', onKey);
+
+                  ov.appendChild(img);
+                  ov.appendChild(btn);
+                  document.body.appendChild(ov);
+                }
+              };
+            })(t.file));
           }
           tracesEl.appendChild(item);
         });

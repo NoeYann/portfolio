@@ -178,10 +178,9 @@
             data-semester="Stage S4"
             data-desc="<p>Manipulation et restitution de données hétérogènes dans l'interface web Skinet : lecture et écriture de fichiers JSON et XML de configuration via l'API FastAPI, navigation dans l'arborescence de fichiers du serveur, récupération et affichage d'images médicales. Projet individuel.</p>"
             data-detail="<p>L&apos;interface devait permettre d&apos;afficher, modifier et sauvegarder des fichiers de configuration JSON/XML stockés sur le serveur. L&apos;API exposait des endpoints GET pour récupérer le contenu des fichiers (affiché dans un textarea HTML natif) et un endpoint PUT pour écrire les modifications, avec popup de confirmation. La récupération d&apos;images médicales (biopsies rénales) utilisait FileResponse() de FastAPI — premier cas de retour API autre que JSON. La navigation de dossiers s&apos;appuyait sur subprocess + ls côté serveur. Ces développements correspondent directement à AC3 &quot;Organiser la restitution de données&quot; et AC4 &quot;Manipuler des données hétérogènes&quot; du niveau 2 de C4.</p>"
-            data-traces='[{"icon":"🗂️","title":"Trace 1 — Navigation de dossiers et édition JSON","desc":"Capture zoomée de l&apos;interface montrant la navigation dans l&apos;arborescence Skinet et l&apos;édition d&apos;un fichier de configuration JSON.","file":"traces/trace-stage-c4-1.png"},{"icon":"📄","title":"Rapport de stage","desc":"Rapport de stage complet au LEAD/CNRS — Noé-Yann Chaffard-Kowalewski.","file":"traces/Rapport_de_stage_au_LEAD_-_Noé-Yann_Chaffard-Kowalewski.pdf"}]'>
+            data-traces='[{"icon":"🗂️","title":"Trace 1 — Navigation de dossiers et édition JSON","desc":"Capture zoomée de l&apos;interface montrant la navigation dans l&apos;arborescence Skinet et l&apos;édition d&apos;un fichier de configuration JSON.","file":"traces/trace-stage-c4-1.png"},{"icon":"📄","title":"Rapport de stage","desc":"Rapport de stage complet au LEAD/CNRS — Noé-Yann Chaffard-Kowalewski.","file":"traces/Rapport de stage au LEAD - Noé-Yann Chaffard-Kowalewski.pdf"}]'>
             <div class="sae-card__semester">
-              <span class="tag">Stage S4</span>
-              <span class="tag tag--stage">Stage</span>
+              <span class="tag tag--stage">Stage S4</span>
             </div>
             <h3 class="sae-card__title">Stage LEAD/CNRS — Manipulation et restitution de données hétérogènes</h3>
             <p class="sae-card__desc">
@@ -307,6 +306,14 @@
             contraintes de sécurité avant de toucher au modèle. Mon point faible restant est le
             SQL avancé — jointures complexes, procédures stockées — que je n'ai pas encore vraiment
             pratiqué. C'est mon objectif principal pour la suite.
+          </p>
+          <p>
+            Le stage a abordé la gestion des données sous un angle différent du SQL —
+            manipulation de fichiers JSON et XML via API, retours non-JSON avec FileResponse,
+            lecture et écriture de données hétérogènes sur un serveur distant. C'est très
+            différent d'une base de données relationnelle, mais ça m'a appris à penser la
+            donnée comme quelque chose qui circule entre des services, pas seulement quelque
+            chose qui se stocke. Mon objectif sur les requêtes SQL avancées reste entier.
           </p>
         </blockquote>
       </div>
