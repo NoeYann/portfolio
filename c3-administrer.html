@@ -82,20 +82,93 @@
 
         <div class="sae-grid">
 
-          <!-- REMPLACER les data-* avec votre contenu réel -->
           <article class="sae-card"
-            data-title="En construction"
-            data-semester=""
-            data-desc="<p>— EN CONSTRUCTION — Le contenu des SAÉ de la compétence 3 arrive dans la journée du 13/06. Excusez-moi pour le retard.</p>"
-            data-detail="<p>— EN CONSTRUCTION — Le contenu des SAÉ de la compétence 3 arrive dans la journée du 13/06. Excusez-moi pour le retard.</p>"
-            data-traces='[]'>
+            data-title="SAÉ 1.03 — Installation Linux pour développeur"
+            data-semester="Semestre 1"
+            data-desc="<p>Installation et configuration d'un système Linux adapté au développement : choix de la distribution, installation depuis un support USB, configuration des outils de développement (VSCode, Synaptic). Réalisé individuellement.</p>"
+            data-detail="<p>La SAÉ demandait d'analyser les différentes options d'installation disponibles, de justifier le choix de la distribution retenue, puis d'installer et configurer les outils de développement nécessaires. Le travail était documenté dans un rapport structuré avec analyse des points positifs et négatifs de la méthode choisie. Les ressources mobilisées étaient R1.03 Introduction à l'architecture des ordinateurs et R2.05 Introduction aux services réseaux, ancrant cet exercice dans AC3 &quot;Installer et configurer un système d'exploitation&quot; du niveau 1 de C3.</p>"
+            data-traces='[{"icon":"🐧","title":"Trace 1 — Rapport d&apos;installation Linux","desc":"Extrait du rapport présentant l&apos;analyse des points positifs et négatifs de la méthode d&apos;installation choisie.","file":"traces/trace-1.03.1.png"}]'>
             <div class="sae-card__semester">
-              <span class="tag">À venir</span>
+              <span class="tag">Semestre 1</span>
             </div>
-            <h3 class="sae-card__title">— EN CONSTRUCTION —</h3>
+            <h3 class="sae-card__title">SAÉ 1.03 — Installation Linux pour développeur</h3>
             <p class="sae-card__desc">
-              Le contenu des SAÉ de la compétence 3 arrive dans la journée du 13/06.
-              Excusez-moi pour le retard.
+              Installation et configuration d'un système Linux adapté au développement : choix
+              de la distribution, installation depuis un support USB, configuration des outils
+              de développement (VSCode, Synaptic). Réalisé individuellement.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card"
+            data-title="SAÉ 2.03 — Serveur Apache"
+            data-semester="Semestre 2"
+            data-desc="<p>Installation et configuration d'un serveur Apache sur Linux avec création d'un hôte virtuel accessible sur un port personnalisé. Rédaction d'un tutoriel documentant la démarche. Réalisé en binôme.</p>"
+            data-detail="<p>La SAÉ portait sur le déploiement d'un serveur web Apache dans un environnement Linux virtualisé : configuration des hôtes virtuels, modification des fichiers de configuration pour écouter sur un port non standard (8080), et rédaction d'un tutoriel documentant chaque étape. Les difficultés rencontrées — adaptation de tous les fichiers de configuration et gestion explicite du port dans l&apos;URL — ont nécessité une lecture approfondie de la documentation Apache. La ressource mobilisée était R2.05 Introduction aux services réseaux, ancrant cet exercice dans AC4 &quot;Configurer un poste de travail dans un réseau d&apos;entreprise&quot; du niveau 1 de C3.</p>"
+            data-traces='[{"icon":"🌐","title":"Trace 1 — Page Index du serveur Apache","desc":"Capture de la page Index du serveur web accessible via le port 8080 (127.0.0.1:8080), confirmant le bon fonctionnement de la configuration Apache.","file":"traces/trace-2.03.1.png"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 2</span>
+            </div>
+            <h3 class="sae-card__title">SAÉ 2.03 — Serveur Apache</h3>
+            <p class="sae-card__desc">
+              Installation et configuration d'un serveur Apache sur Linux avec création d'un
+              hôte virtuel accessible sur un port personnalisé. Rédaction d'un tutoriel
+              documentant la démarche. Réalisé en binôme.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card"
+            data-title="R3.05/R3.06 — Programmation système — Mini Shell &amp; Apache HTTPS"
+            data-semester="Semestre 3"
+            data-desc="<p>Deux SAÉ de programmation système en S3 : développement en C d'un parser lexical pour mini shell (automate fini à 4 états reconnaissant commandes, redirections et pipes) et configuration d'un hôte virtuel Apache avec migration HTTP → HTTPS via certificats SSL OpenSSL et analyse Wireshark. Réalisé en binôme.</p>"
+            data-detail="<p>La première SAÉ portait sur l'implémentation d'un mini shell en C à partir d'un parser lexical fourni. Le travail consistait à comprendre et intégrer un automate fini à 4 états (Neutre, Spp, Equote, Emot) reconnaissant les lexèmes MOT, TUBE, INF, SUP, SPP, NL, FIN. La Partie 1 — intégration du parser et reconnaissance des lexèmes — a été implémentée et fonctionnelle. Les Parties 2 et 3 (exécution des commandes via execvp, gestion des redirections et pipes via fork/dup/pipe) n&apos;ont pas pu être finalisées dans les délais. Ce projet m&apos;a confronté pour la première fois à la programmation bas niveau sous Linux, en rupture avec le développement applicatif habituel.</p><p>La deuxième SAÉ portait sur la sécurisation d&apos;un serveur web Apache : génération de certificats SSL auto-signés via OpenSSL, configuration des fichiers Apache pour activer HTTPS, puis vérification par capture Wireshark — les échanges chiffrés confirmant que le trafic HTTP en clair avait bien disparu. C&apos;est la première fois que j&apos;ai travaillé concrètement sur la sécurisation d&apos;un service réseau de bout en bout. Les ressources mobilisées étaient R3.05 Programmation système et R3.06 Architecture des réseaux, ancrant ces exercices dans AC1 &quot;Concevoir et développer des applications communicantes&quot;, AC2 &quot;Utiliser des serveurs et services réseaux virtualisés&quot; et AC3 &quot;Sécuriser les services et données d&apos;un système&quot; du niveau 2 de C3.</p>"
+            data-traces='[{"icon":"💻","title":"Trace 1 — Code source du parser lexical (C)","desc":"Extrait du fichier sae.c implémentant l&apos;automate fini à 4 états du parser lexical du mini shell.","file":"traces/trace-s3-c3-1.png"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 3</span>
+            </div>
+            <h3 class="sae-card__title">R3.05/R3.06 — Programmation système — Mini Shell &amp; Apache HTTPS</h3>
+            <p class="sae-card__desc">
+              Deux SAÉ de programmation système en S3 : développement en C d'un parser lexical
+              pour mini shell (automate fini à 4 états) et configuration d'un hôte virtuel Apache
+              avec migration HTTP → HTTPS via certificats SSL OpenSSL et analyse Wireshark.
+              Réalisé en binôme.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card"
+            data-title="S4.A.01 — Développement d'une application complexe — TOUTATIX — Docker Compose"
+            data-semester="Semestre 4"
+            data-desc="<p>Déploiement d'une application web multi-services avec Docker Compose dans le cadre du projet TOUTATIX : orchestration des conteneurs (API Machine Learning, front-end, service tiers), configuration réseau inter-conteneurs. Réalisé en groupe de 4.</p>"
+            data-detail="<p>La stack Docker Compose du projet orchestrait plusieurs services distincts : le front-end HTML/CSS/JS, l&apos;API REST fournie par l&apos;enseignant et le modèle de Machine Learning NodeJS. La configuration définissait les ports exposés, les dépendances entre services et les variables d&apos;environnement. Ma participation à cette partie était partielle — j&apos;ai suivi la mise en place sans en maîtriser tous les détails, ce qui constitue un axe de progression clairement identifié. La ressource mobilisée ancre cet exercice dans AC2 &quot;Utiliser des serveurs et services réseaux virtualisés&quot; du niveau 2 de C3.</p>"
+            data-traces='[{"icon":"🐳","title":"Trace 1 — docker-compose.yml TOUTATIX","desc":"Fichier docker-compose.yml du projet TOUTATIX montrant l&apos;orchestration des services (API, front-end, Machine Learning) et la configuration réseau inter-conteneurs.","file":"traces/trace-s4-c3-1.png"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 4</span>
+            </div>
+            <h3 class="sae-card__title">S4.A.01 — Développement d'une application complexe — TOUTATIX — Docker Compose</h3>
+            <p class="sae-card__desc">
+              Déploiement d'une application web multi-services avec Docker Compose dans le cadre
+              du projet TOUTATIX : orchestration des conteneurs (API Machine Learning, front-end,
+              service tiers), configuration réseau inter-conteneurs. Réalisé en groupe de 4.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card"
+            data-title="S4.A.01 — Développement d'une application complexe — Reprise du site de vote — Containerisation Docker"
+            data-semester="Semestre 4"
+            data-desc="<p>Containerisation du site de vote repris avec Docker dans le cadre de la mission ESN : environnement reproductible isolant l'application PHP et sa base de données MySQL. Contrainte obligatoire pour les binômes. Réalisé en binôme.</p>"
+            data-detail="<p>La containerisation était une exigence explicite de la SAÉ S4 pour les binômes. Elle impliquait de configurer un docker-compose.yml permettant de faire tourner l&apos;application PHP corrigée et sa base MySQL dans des conteneurs isolés et reproductibles. Cette approche m&apos;a confronté à la notion d&apos;infrastructure as code : la configuration de l&apos;environnement fait partie intégrante du livrable au même titre que le code. Par rapport à TOUTATIX où j&apos;avais suivi sans tout maîtriser, cette fois j&apos;ai dû configurer Docker moi-même — ce qui m&apos;a forcé à mieux comprendre les concepts de base. La ressource ancre cet exercice dans AC2 &quot;Utiliser des serveurs et services réseaux virtualisés&quot; du niveau 2 de C3.</p>"
+            data-traces='[{"icon":"🐳","title":"Trace 1 — docker-compose.yml de la reprise","desc":"Fichier docker-compose.yml configurant les conteneurs PHP et MySQL pour le déploiement reproductible du site de vote repris et corrigé.","file":"traces/trace-s4-c3-2.png"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 4</span>
+            </div>
+            <h3 class="sae-card__title">S4.A.01 — Développement d'une application complexe — Reprise du site de vote — Containerisation Docker</h3>
+            <p class="sae-card__desc">
+              Containerisation du site de vote repris avec Docker dans le cadre de la mission ESN :
+              environnement reproductible isolant l'application PHP et sa base de données MySQL.
+              Contrainte obligatoire pour les binômes. Réalisé en binôme.
             </p>
             <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
           </article>
@@ -197,8 +270,31 @@
 
         <blockquote class="reflexive-quote">
           <p>
-            — EN CONSTRUCTION — L'analyse réflexive de la compétence 3 arrive dans la journée
-            du 13/06. Excusez-moi pour le retard.
+            C3 est la compétence où j'ai eu les moins bonnes notes, et l'analyse que j'en fais
+            est claire : je n'avais pas les bases suffisantes pour absorber ce qui était enseigné.
+          </p>
+          <p>
+            En BUT1, j'avais quelques notions de Linux sans vraiment les maîtriser. En BUT2,
+            R3.05 et R3.06 ont introduit des concepts que je n'avais jamais vraiment pratiqués —
+            programmation système bas niveau, appels système POSIX, architecture réseau,
+            sécurisation de services. Les deux ressources m'ont légèrement aidé à progresser,
+            mais pas suffisamment pour valider confortablement les apprentissages critiques.
+          </p>
+          <p>
+            Le mini shell illustre bien cette difficulté : j'ai compris et implémenté la Partie 1
+            (le parser lexical, l'automate fini), mais les Parties 2 et 3 — exécution réelle des
+            commandes via fork/execvp, gestion des redirections et pipes — n'ont pas pu être
+            finalisées. Sur Apache HTTPS, le résultat était fonctionnel, mais je n'en maîtrisais
+            pas tous les mécanismes sous-jacents. Docker est la partie où j'ai le moins "pas
+            compris" — sur TOUTATIX j'ai suivi sans tout saisir, sur la reprise S4 j'ai dû le
+            configurer moi-même, ce qui m'a forcé à comprendre les bases.
+          </p>
+          <p>
+            Si c'était à refaire, je passerais beaucoup plus de temps à pratiquer en dehors des
+            séances — c'est le seul moyen de vraiment ancrer des compétences aussi techniques.
+            Mon objectif pour la suite est de revoir les bases de la programmation système :
+            processus, appels système, descripteurs de fichiers. Sans ces fondamentaux, Docker
+            et les services réseaux restent des boîtes noires.
           </p>
         </blockquote>
       </div>
