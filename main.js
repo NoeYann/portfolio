@@ -135,18 +135,21 @@
     var tracesEl    = overlay.querySelector('.modal__traces');
 
     function openModal(card) {
-      titleEl.textContent    = card.dataset.title    || '';
-      semesterEl.innerHTML   = card.dataset.semester
-        ? '<span class="tag">' + card.dataset.semester + '</span>'
-        : '';
-      descEl.innerHTML       = card.dataset.desc     || '';
-      detailEl.innerHTML     = card.dataset.detail   || '';
+      var isProject = 'projectTitle' in card.dataset;
+      titleEl.textContent    = (isProject ? card.dataset.projectTitle  : card.dataset.title)    || '';
+      var sem                =  isProject ? ''                          : card.dataset.semester;
+      semesterEl.innerHTML   = sem ? '<span class="tag">' + sem + '</span>' : '';
+      descEl.innerHTML       = (isProject ? card.dataset.projectDesc   : card.dataset.desc)     || '';
+      detailEl.innerHTML     = (isProject ? card.dataset.projectDetail : card.dataset.detail)   || '';
 
-      /* Traces : JSON encodé en data-traces */
+      /* Traces */
       tracesEl.innerHTML = '';
-      var rawTraces = card.dataset.traces;
+      var rawTraces = isProject ? card.dataset.projectTraces : card.dataset.traces;
       if (rawTraces) {
         var traces = JSON.parse(rawTraces);
+        if (traces.length === 0) {
+          tracesEl.innerHTML = '<p style="color:var(--color-text-mute);font-size:0.88rem;">Aucune trace disponible pour ce projet.</p>';
+        }
         traces.forEach(function (t) {
           var item = document.createElement('div');
           item.className = 'modal__trace-item' + (t.file ? ' modal__trace-item--link' : '');
@@ -205,8 +208,8 @@
       document.body.style.overflow = '';
     }
 
-    /* Ouvrir au clic sur une carte SAÉ */
-    document.querySelectorAll('.sae-card[data-title]').forEach(function (card) {
+    /* Ouvrir au clic sur une carte SAÉ ou projet */
+    document.querySelectorAll('.sae-card[data-title], .project-card[data-project-title]').forEach(function (card) {
       card.addEventListener('click', function () { openModal(card); });
       card.setAttribute('role', 'button');
       card.setAttribute('tabindex', '0');

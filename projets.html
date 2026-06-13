@@ -83,38 +83,33 @@
         <h2 class="section-title">En cours</h2>
 
         <div class="wip-card-wrapper">
-          <!-- REMPLACER : votre projet en cours -->
-          <article class="project-card project-featured">
+          <article class="project-card project-featured"
+            data-project-title="Échiquier connecté — Lichess API"
+            data-project-desc="<p>Échiquier physique connecté permettant de jouer contre un adversaire distant via l'API Lichess. Le plateau physique synchronise les coups en temps réel avec la plateforme en ligne.</p>"
+            data-project-detail="<p>L'idée est de pouvoir jouer aux échecs sur un vrai plateau physique contre une personne n'importe où dans le monde, la partie étant gérée via Lichess. Le projet est en phase de conception : les technologies côté logiciel sont identifiées (Python + API Lichess), et le matériel nécessaire est en cours de recensement avec l'aide du Club Robot de l'IUT, qui participera à la partie hardware à partir de l'année prochaine.</p>"
+            data-project-traces='[]'
+            style="cursor:pointer;">
 
-            <!-- Thumbnail colorée placeholder -->
-            <div class="project-card__thumb thumb--teal" aria-hidden="true">🚧</div>
+            <div class="project-card__thumb thumb--teal" aria-hidden="true">♟️</div>
 
             <div class="project-card__body">
               <div>
                 <span class="badge-wip">En développement</span>
               </div>
-
-              <!-- REMPLACER : titre du projet -->
-              <h3 class="project-card__title">Projet en cours — Titre</h3>
-
-              <!-- REMPLACER : technologies utilisées -->
+              <h3 class="project-card__title">Échiquier connecté — Lichess API</h3>
               <div class="project-card__tags">
                 <span class="tag">Python</span>
-                <span class="tag">FastAPI</span>
-                <span class="tag">React</span>
+                <span class="tag">API Lichess</span>
+                <span class="tag">Embarqué</span>
+                <span class="tag">Club Robot</span>
               </div>
-
-              <!-- REMPLACER : description du projet -->
               <p class="project-card__desc">
-                Description du projet en cours de développement. Expliquez ici l'objectif
-                du projet, les technologies choisies et ce qui vous a motivé à le démarrer.
-                Mentionnez l'état d'avancement actuel et les prochaines étapes prévues.
+                Échiquier physique connecté permettant de jouer contre un adversaire distant
+                via l'API Lichess. Le plateau physique synchronise les coups en temps réel
+                avec la plateforme en ligne. Projet en phase de conception.
               </p>
-
-              <!-- Bouton désactivé tant que le projet n'est pas terminé -->
               <button class="btn btn--disabled" disabled>En cours…</button>
             </div>
-
           </article>
         </div>
       </div>
@@ -129,88 +124,27 @@
 
         <div class="projects-grid">
 
-          <!-- ── Projet 1 — REMPLACER ── -->
-          <article class="project-card">
-            <div class="project-card__thumb thumb--blue" aria-hidden="true">💡</div>
-            <div class="project-card__body">
-              <!-- REMPLACER : technologies -->
-              <div class="project-card__tags">
-                <span class="tag">JavaScript</span>
-                <span class="tag">HTML/CSS</span>
-              </div>
-              <!-- REMPLACER : titre -->
-              <h3 class="project-card__title">Projet 1 — Titre</h3>
-              <!-- REMPLACER : description -->
-              <p class="project-card__desc">
-                Description courte du projet. Expliquez la problématique résolue, les
-                fonctionnalités principales et les apprentissages réalisés au cours
-                de ce développement personnel.
-              </p>
-              <!-- REMPLACER : ajouter l'URL réelle et retirer btn--disabled -->
-              <a href="#" class="btn btn--disabled" aria-disabled="true">Voir le projet</a>
-            </div>
-          </article>
+          <article class="project-card"
+            data-project-title="Robot suiveur de ligne — Club Robot IUT"
+            data-project-desc="<p>Participation en fin de projet à un robot suiveur de ligne destiné à un concours. Découverte de l'univers de la robotique embarquée : compréhension de l'architecture du projet, du code existant et contribution de fonctions mineures sur un robot-caméra.</p>"
+            data-project-detail="<p>Je suis arrivé en fin de développement du projet, ce qui m'a imposé de comprendre rapidement une base de code existante avant de pouvoir contribuer. J'ai implémenté des fonctions mineures tout en devant saisir la majorité de l'architecture du projet pour le faire correctement. Cette expérience m'a ouvert à un domaine que je ne connaissais pas — la robotique embarquée — et qui m'a donné envie d'aller plus loin. C'est d'ailleurs ce club qui m'accompagnera sur mon prochain projet personnel.</p>"
+            data-project-traces='[{"icon":"💻","title":"Extrait du code","desc":"Portion du code du robot suiveur de ligne.","file":"traces/trace-robot-1.png"},{"icon":"🎬","title":"Capture vidéo","desc":"Frame de la vidéo du robot suivant la ligne lors du concours.","file":"traces/trace-robot-2.png"}]'
+            style="cursor:pointer;">
 
-          <!-- ── Projet 2 — REMPLACER ── -->
-          <article class="project-card">
-            <div class="project-card__thumb thumb--green" aria-hidden="true">🌱</div>
+            <div class="project-card__thumb thumb--blue" aria-hidden="true">🤖</div>
             <div class="project-card__body">
-              <!-- REMPLACER : technologies -->
               <div class="project-card__tags">
-                <span class="tag">Python</span>
-                <span class="tag">SQLite</span>
+                <span class="tag">Robotique</span>
+                <span class="tag">Embarqué</span>
+                <span class="tag">Club Robot</span>
               </div>
-              <!-- REMPLACER : titre -->
-              <h3 class="project-card__title">Projet 2 — Titre</h3>
-              <!-- REMPLACER : description -->
+              <h3 class="project-card__title">Robot suiveur de ligne — Club Robot IUT</h3>
               <p class="project-card__desc">
-                Script ou application développé pour automatiser une tâche répétitive
-                du quotidien. Présentation de la démarche, des difficultés rencontrées
-                et des solutions retenues pour les surmonter.
+                Participation en fin de projet à un robot suiveur de ligne destiné à un concours.
+                Découverte de la robotique embarquée : compréhension de l'architecture du projet
+                et contribution de fonctions mineures sur un robot-caméra.
               </p>
-              <a href="#" class="btn btn--disabled" aria-disabled="true">Voir le projet</a>
-            </div>
-          </article>
-
-          <!-- ── Projet 3 — REMPLACER ── -->
-          <article class="project-card">
-            <div class="project-card__thumb thumb--violet" aria-hidden="true">🎮</div>
-            <div class="project-card__body">
-              <!-- REMPLACER : technologies -->
-              <div class="project-card__tags">
-                <span class="tag">Java</span>
-                <span class="tag">JavaFX</span>
-              </div>
-              <!-- REMPLACER : titre -->
-              <h3 class="project-card__title">Projet 3 — Titre</h3>
-              <!-- REMPLACER : description -->
-              <p class="project-card__desc">
-                Petit jeu ou application graphique développé pour explorer un framework
-                ou une technologie en dehors du cadre pédagogique. Résultat d'une curiosité
-                personnelle et d'une envie d'expérimenter.
-              </p>
-              <a href="#" class="btn btn--disabled" aria-disabled="true">Voir le projet</a>
-            </div>
-          </article>
-
-          <!-- ── Projet 4 — REMPLACER ── -->
-          <article class="project-card">
-            <div class="project-card__thumb thumb--peach" aria-hidden="true">🔧</div>
-            <div class="project-card__body">
-              <!-- REMPLACER : technologies -->
-              <div class="project-card__tags">
-                <span class="tag">Bash</span>
-                <span class="tag">Linux</span>
-              </div>
-              <!-- REMPLACER : titre -->
-              <h3 class="project-card__title">Projet 4 — Titre</h3>
-              <!-- REMPLACER : description -->
-              <p class="project-card__desc">
-                Ensemble de scripts d'automatisation ou de configuration pour personnaliser
-                et optimiser un environnement de travail. Partage de la démarche et
-                des outils retenus.
-              </p>
-              <a href="#" class="btn btn--disabled" aria-disabled="true">Voir le projet</a>
+              <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
             </div>
           </article>
 
@@ -247,6 +181,33 @@
       <p class="footer__copy">Portfolio BUT Informatique · Noé-Yann CHAFFARD-KOWALEWSKI · IUT de Saint-Dié-des-Vosges · 2024–2027</p>
     </div>
   </footer>
+
+  <div id="sae-modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal">
+      <div class="modal__header">
+        <div class="modal__header-text">
+          <div class="modal__semester"></div>
+          <h2 class="modal__title" id="modal-title"></h2>
+        </div>
+        <button class="modal__close" aria-label="Fermer">✕</button>
+      </div>
+      <div class="modal__body">
+        <div>
+          <p class="modal__section-label">Présentation</p>
+          <div class="modal__text modal__desc"></div>
+        </div>
+        <div>
+          <p class="modal__section-label">Détail &amp; contexte</p>
+          <div class="modal__text modal__detail"></div>
+        </div>
+        <hr class="modal__traces-sep" />
+        <div>
+          <p class="modal__section-label">Traces &amp; réalisations</p>
+          <div class="modal__traces"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="main.js"></script>
 </body>
