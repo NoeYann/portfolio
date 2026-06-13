@@ -244,8 +244,30 @@
 
         <blockquote class="reflexive-quote">
           <p>
-            — EN CONSTRUCTION — L'analyse réflexive de la compétence 4 arrive dans la journée
-            du 13/06. Excusez-moi pour le retard.
+            En BUT1, je notais : <em>"j'ai eu du mal avec tout ce qui est MCD, Entité et Relation
+            et Cardinalité"</em> et <em>"j'ai eu du mal avec la mise à jour et l'interrogation de
+            la base en SQL."</em> Deux points faibles clairs, que je m'étais fixé comme objectifs
+            pour la suite.
+          </p>
+          <p>
+            En BUT2, la modélisation ne me pose plus de problèmes. R3.03 Analyse et R3.07 SQL et
+            programmation, mobilisées de manière équilibrée, m'ont permis de concevoir le modèle
+            du site de vote de bout en bout en binôme — diagramme de classes, contraintes métier,
+            intégration avec PHP via PDO. Selon les tâches, j'alternais entre autonomie complète
+            et travail collaboratif avec mon binôme.
+          </p>
+          <p>
+            La prise de conscience la plus importante vient de l'audit du site de vote en S4 :
+            trouver des credentials root/root codés en dur, un bulletin stocké en clair avec une
+            empreinte réversible, et une faille XSS permettant le vol de jetons de session m'a
+            révélé que la sécurité BDD ne se rajoute pas après coup — elle se pense dès la
+            conception du modèle. C'est quelque chose que je n'avais pas du tout intégré en BUT1.
+          </p>
+          <p>
+            Si c'était à refaire, je commencerais chaque projet BDD avec un inventaire des
+            contraintes de sécurité avant de toucher au modèle. Mon point faible restant est le
+            SQL avancé — jointures complexes, procédures stockées — que je n'ai pas encore vraiment
+            pratiqué. C'est mon objectif principal pour la suite.
           </p>
         </blockquote>
       </div>
