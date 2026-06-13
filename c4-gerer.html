@@ -117,18 +117,39 @@
           </article>
 
           <article class="sae-card"
-            data-title="En construction"
-            data-semester=""
-            data-desc="<p>— EN CONSTRUCTION — Le contenu des SAÉ de la compétence 4 (semestres 3 et 4) arrive dans la journée du 13/06. Excusez-moi pour le retard.</p>"
-            data-detail="<p>— EN CONSTRUCTION — Le contenu des SAÉ de la compétence 4 (semestres 3 et 4) arrive dans la journée du 13/06. Excusez-moi pour le retard.</p>"
-            data-traces='[]'>
+            data-title="S3.A.01 — Développement d'une application — Site de vote PHP — Base de données"
+            data-semester="Semestre 3"
+            data-desc="<p>Conception et implémentation de la base de données relationnelle du site de vote Ballon d'Or en PHP/MySQL. Modèle conçu en binôme avec PhpMyAdmin, répondant à trois contraintes fortes : anonymat du vote, unicité du vote et gestion temporelle du scrutin. Scrutin pondéré par rang impliquant une structure de vote adaptée.</p>"
+            data-detail="<p>La BDD devait satisfaire des exigences strictes : une colonne booléenne aVote sur la table Journaliste garantissait l'unicité du vote, tandis que la séparation des entités Vote et Journaliste dans le modèle visait à protéger l'anonymat. La gestion temporelle du scrutin (phases ouverture/vote/clôture) était pilotée par des requêtes conditionnelles sur l'entité Scrutin. Toutes les interactions passaient par PDO avec requêtes préparées pour prévenir les injections SQL. Les ressources mobilisées étaient R3.07 SQL et programmation et R3.03 Analyse pour la modélisation MCD/MLD. Ces choix correspondent directement aux AC2 &quot;Assurer la confidentialité des données&quot; et AC3 &quot;Organiser la restitution de données&quot; du niveau 2 de C4.</p>"
+            data-traces='[{"icon":"🗃️","title":"Trace 1 — Diagramme de classes UML","desc":"Diagramme de classes modélisant la structure complète de la BDD : entités Utilisateur, Journaliste, Vote, Scrutin, Candidat, Résultat et Classement avec leurs relations et la colonne aVote garantissant l&apos;unicité du vote.","file":"traces/trace-s3-c4-1.png"}]'>
             <div class="sae-card__semester">
-              <span class="tag">À venir</span>
+              <span class="tag">Semestre 3</span>
             </div>
-            <h3 class="sae-card__title">— EN CONSTRUCTION —</h3>
+            <h3 class="sae-card__title">S3.A.01 — Développement d'une application — Site de vote PHP — Base de données</h3>
             <p class="sae-card__desc">
-              Le contenu des SAÉ de la compétence 4 (semestres 3 et 4) arrive dans la journée
-              du 13/06. Excusez-moi pour le retard.
+              Conception et implémentation de la base de données relationnelle du site de vote
+              Ballon d'Or en PHP/MySQL. Modèle conçu en binôme avec PhpMyAdmin, répondant à
+              trois contraintes fortes : anonymat du vote, unicité du vote et gestion temporelle
+              du scrutin. Scrutin pondéré par rang impliquant une structure de vote adaptée.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card"
+            data-title="S4.A.01 — Développement d'une application complexe — Reprise du site de vote — Audit et sécurisation BDD"
+            data-semester="Semestre 4"
+            data-desc="<p>Audit et correction de la base de données d'un site de vote existant dans un contexte de jeu de rôle entreprise. Identification et correction de failles critiques : identifiants codés en dur, bulletin stocké en clair avec empreinte réversible et vulnérabilité XSS sur les entrées non échappées. Réalisé en binôme.</p>"
+            data-detail="<p>L'audit a révélé plusieurs failles critiques. Les identifiants root/root codés en dur dans dbconnect.php avec réutilisation du compte super-utilisateur MySQL — corrigé en externalisant les credentials dans des variables d'environnement. Le bulletin stocké en clair sous la forme CANDIDAT_ID:X avec une empreinte déterministe réversible, contredisant l'anonymat promis. Enfin une faille XSS sur le forum : l'absence d'échappement permettait d'injecter du JavaScript arbitraire et de voler les jetons de session administrateur via document.cookie. Ce travail d'audit m'a confronté à la réalité de la reprise d'un modèle de données tiers : comprendre des choix de conception que l'on n'a pas faits, identifier leurs failles et les corriger de façon documentée. Les AC directement mobilisés sont AC1 &quot;Optimiser les modèles de données&quot; et AC2 &quot;Assurer la confidentialité des données&quot; du niveau 2 de C4.</p>"
+            data-traces='[{"icon":"🔍","title":"Trace 1 — Analyse de la faille XSS","desc":"Extrait du rapport d&apos;audit détaillant la faille Cross-Site Scripting identifiée : injection de script via le forum, vecteur de vol de jetons de session administrative via document.cookie.","file":"traces/trace-s4-c4-1.png"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Semestre 4</span>
+            </div>
+            <h3 class="sae-card__title">S4.A.01 — Développement d'une application complexe — Reprise du site de vote — Audit et sécurisation BDD</h3>
+            <p class="sae-card__desc">
+              Audit et correction de la base de données d'un site de vote existant dans un contexte
+              de jeu de rôle entreprise. Identification et correction de failles critiques :
+              identifiants codés en dur, bulletin stocké en clair avec empreinte réversible et
+              vulnérabilité XSS sur les entrées non échappées. Réalisé en binôme.
             </p>
             <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
           </article>
