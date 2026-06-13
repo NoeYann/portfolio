@@ -12,6 +12,25 @@
     .ac-item__check    { background: var(--color-c1); border-color: var(--color-c1-dark); }
     .ac-item__check::after { color: var(--color-c1-dark); }
     .reflexive-quote   { --quote-color: var(--color-c1); }
+    .sae-card--stage {
+      border: 1.5px solid #b0a090;
+      box-shadow: 0 4px 16px rgba(80,60,40,0.13);
+    }
+    .sae-card--stage .sae-card__semester {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .tag--stage {
+      background: #e8ddd0;
+      color: #7a5c3a;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 0.18rem 0.6rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
   </style>
 </head>
 
@@ -193,6 +212,27 @@
               en 1v1 sur iOS et rendu 3D interactif d'une peinture avec Three.js dans le navigateur.
               Réalisés en binôme, ces TP illustrent la capacité à adapter un développement à des
               environnements techniques variés.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card sae-card--stage"
+            data-title="Stage LEAD/CNRS — Interface graphique web pour Skinet"
+            data-semester="Stage S4"
+            data-desc="<p>Développement full-stack en 8 semaines d'une interface graphique web pour Skinet, application de segmentation de biopsies rénales du LEAD/CNRS. Frontend HTML/CSS/JS, backend Python FastAPI, API REST avec navigation de dossiers, affichage de logs, édition de fichiers de configuration et téléchargement de résultats. Projet individuel en milieu de recherche.</p>"
+            data-detail="<p>La mission consistait à rendre Skinet accessible à des médecins non-informaticiens via une interface web. L&apos;architecture séparait un frontend statique servi sur le port 8000 et une API FastAPI/Uvicorn sur le port 8080, communiquant via appels JS asynchrones. Les fonctionnalités développées incluaient : navigation dans l&apos;arborescence du serveur, lancement de l&apos;inférence via subprocess, affichage dynamique des logs terminal, édition et sauvegarde de fichiers de configuration JSON/XML, téléchargement de fichiers et gestion du port Uvicorn dynamique. Un script Bash lancement.sh automatisait le démarrage de l&apos;environnement. Premières utilisations concrètes de Git avec branches et pull-requests.</p>"
+            data-traces='[{"icon":"🖥️","title":"Trace 1 — Interface web finale","desc":"Capture de l&apos;interface web Skinet finalisée montrant la navigation de dossiers, l&apos;édition de configuration et les logs terminal.","file":"traces/trace-stage-c1-1.png"},{"icon":"🏗️","title":"Trace 2 — Schéma de l&apos;architecture","desc":"Schéma de l&apos;architecture de l&apos;interface web illustrant la communication entre frontend, API FastAPI et serveur de calcul Skinet.","file":"traces/trace-stage-c1-2.png"},{"icon":"📄","title":"Rapport de stage","desc":"Rapport de stage complet au LEAD/CNRS — Noé-Yann Chaffard-Kowalewski.","file":"traces/Rapport_de_stage_au_LEAD_-_Noé-Yann_Chaffard-Kowalewski.pdf"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Stage S4</span>
+              <span class="tag tag--stage">Stage</span>
+            </div>
+            <h3 class="sae-card__title">Stage LEAD/CNRS — Interface graphique web pour Skinet</h3>
+            <p class="sae-card__desc">
+              Développement full-stack en 8 semaines d'une interface graphique web pour Skinet,
+              application de segmentation de biopsies rénales du LEAD/CNRS. Frontend HTML/CSS/JS,
+              backend Python FastAPI, API REST avec navigation de dossiers, affichage de logs,
+              édition de fichiers de configuration et téléchargement de résultats. Projet individuel
+              en milieu de recherche.
             </p>
             <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
           </article>

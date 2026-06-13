@@ -11,6 +11,25 @@
     .ac-item__check    { background: var(--color-c4); border-color: var(--color-c4-dark); }
     .ac-item__check::after { color: var(--color-c4-dark); }
     .reflexive-quote   { --quote-color: var(--color-c4); }
+    .sae-card--stage {
+      border: 1.5px solid #b0a090;
+      box-shadow: 0 4px 16px rgba(80,60,40,0.13);
+    }
+    .sae-card--stage .sae-card__semester {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .tag--stage {
+      background: #e8ddd0;
+      color: #7a5c3a;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 0.18rem 0.6rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
   </style>
 </head>
 
@@ -150,6 +169,26 @@
               de jeu de rôle entreprise. Identification et correction de failles critiques :
               identifiants codés en dur, bulletin stocké en clair avec empreinte réversible et
               vulnérabilité XSS sur les entrées non échappées. Réalisé en binôme.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card sae-card--stage"
+            data-title="Stage LEAD/CNRS — Manipulation et restitution de données hétérogènes"
+            data-semester="Stage S4"
+            data-desc="<p>Manipulation et restitution de données hétérogènes dans l'interface web Skinet : lecture et écriture de fichiers JSON et XML de configuration via l'API FastAPI, navigation dans l'arborescence de fichiers du serveur, récupération et affichage d'images médicales. Projet individuel.</p>"
+            data-detail="<p>L&apos;interface devait permettre d&apos;afficher, modifier et sauvegarder des fichiers de configuration JSON/XML stockés sur le serveur. L&apos;API exposait des endpoints GET pour récupérer le contenu des fichiers (affiché dans un textarea HTML natif) et un endpoint PUT pour écrire les modifications, avec popup de confirmation. La récupération d&apos;images médicales (biopsies rénales) utilisait FileResponse() de FastAPI — premier cas de retour API autre que JSON. La navigation de dossiers s&apos;appuyait sur subprocess + ls côté serveur. Ces développements correspondent directement à AC3 &quot;Organiser la restitution de données&quot; et AC4 &quot;Manipuler des données hétérogènes&quot; du niveau 2 de C4.</p>"
+            data-traces='[{"icon":"🗂️","title":"Trace 1 — Navigation de dossiers et édition JSON","desc":"Capture zoomée de l&apos;interface montrant la navigation dans l&apos;arborescence Skinet et l&apos;édition d&apos;un fichier de configuration JSON.","file":"traces/trace-stage-c4-1.png"},{"icon":"📄","title":"Rapport de stage","desc":"Rapport de stage complet au LEAD/CNRS — Noé-Yann Chaffard-Kowalewski.","file":"traces/Rapport_de_stage_au_LEAD_-_Noé-Yann_Chaffard-Kowalewski.pdf"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Stage S4</span>
+              <span class="tag tag--stage">Stage</span>
+            </div>
+            <h3 class="sae-card__title">Stage LEAD/CNRS — Manipulation et restitution de données hétérogènes</h3>
+            <p class="sae-card__desc">
+              Manipulation et restitution de données hétérogènes dans l'interface web Skinet :
+              lecture et écriture de fichiers JSON et XML de configuration via l'API FastAPI,
+              navigation dans l'arborescence de fichiers du serveur, récupération et affichage
+              d'images médicales. Projet individuel.
             </p>
             <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
           </article>

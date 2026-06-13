@@ -11,6 +11,25 @@
     .ac-item__check    { background: var(--color-c6); border-color: var(--color-c6-dark); }
     .ac-item__check::after { color: var(--color-c6-dark); }
     .reflexive-quote   { --quote-color: var(--color-c6); }
+    .sae-card--stage {
+      border: 1.5px solid #b0a090;
+      box-shadow: 0 4px 16px rgba(80,60,40,0.13);
+    }
+    .sae-card--stage .sae-card__semester {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .tag--stage {
+      background: #e8ddd0;
+      color: #7a5c3a;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 0.18rem 0.6rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
   </style>
 </head>
 
@@ -147,6 +166,26 @@
               Mission de reprise applicative en binôme dans un contexte de jeu de rôle ESN :
               posture professionnelle de prestataire, alternance développement et documentation,
               rédaction d'un rapport en anglais et soutenance finale le 12 juin.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card sae-card--stage"
+            data-title="Stage LEAD/CNRS — Intégration en environnement professionnel de recherche"
+            data-semester="Stage S4"
+            data-desc="<p>Intégration dans un environnement professionnel de recherche au LEAD/CNRS : collaboration avec le maître de stage, un médecin collaborateur et l'équipe projet, restitution hebdomadaire de l'avancement, posture de prestataire interne dans un laboratoire académique. Première expérience professionnelle. Projet individuel.</p>"
+            data-detail="<p>Le stage constituait ma première immersion professionnelle réelle. J&apos;ai dû adopter une posture nouvelle : travailler de façon autonome tout en rendant compte régulièrement, comprendre les attentes d&apos;un contexte de recherche (rigueur documentaire, communication avec des non-informaticiens comme le médecin collaborateur), et m&apos;adapter à une organisation différente d&apos;un projet scolaire. Les rapports hebdomadaires et les points réguliers avec le maître de stage m&apos;ont appris à structurer et formaliser mon avancement de façon professionnelle. Cette expérience ancre directement AC2 &quot;Appliquer une démarche pour intégrer une équipe informatique&quot; et AC4 &quot;Rendre compte de son activité professionnelle&quot; du niveau 2 de C6.</p>"
+            data-traces='[{"icon":"✍️","title":"Trace 1 — Extrait de la conclusion personnelle","desc":"Extrait de la conclusion du rapport de stage présentant le bilan personnel et les perspectives suite à cette première expérience professionnelle.","file":"traces/trace-stage-c6-1.png"},{"icon":"📄","title":"Rapport de stage","desc":"Rapport de stage complet au LEAD/CNRS — Noé-Yann Chaffard-Kowalewski.","file":"traces/Rapport_de_stage_au_LEAD_-_Noé-Yann_Chaffard-Kowalewski.pdf"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Stage S4</span>
+              <span class="tag tag--stage">Stage</span>
+            </div>
+            <h3 class="sae-card__title">Stage LEAD/CNRS — Intégration en environnement professionnel de recherche</h3>
+            <p class="sae-card__desc">
+              Intégration dans un environnement professionnel de recherche au LEAD/CNRS :
+              collaboration avec le maître de stage, un médecin collaborateur et l'équipe projet,
+              restitution hebdomadaire de l'avancement, posture de prestataire interne dans un
+              laboratoire académique. Première expérience professionnelle. Projet individuel.
             </p>
             <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
           </article>

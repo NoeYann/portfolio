@@ -11,6 +11,25 @@
     .ac-item__check    { background: var(--color-c3); border-color: var(--color-c3-dark); }
     .ac-item__check::after { color: var(--color-c3-dark); }
     .reflexive-quote   { --quote-color: var(--color-c3); }
+    .sae-card--stage {
+      border: 1.5px solid #b0a090;
+      box-shadow: 0 4px 16px rgba(80,60,40,0.13);
+    }
+    .sae-card--stage .sae-card__semester {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .tag--stage {
+      background: #e8ddd0;
+      color: #7a5c3a;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      padding: 0.18rem 0.6rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
   </style>
 </head>
 
@@ -169,6 +188,26 @@
               Containerisation du site de vote repris avec Docker dans le cadre de la mission ESN :
               environnement reproductible isolant l'application PHP et sa base de données MySQL.
               Contrainte obligatoire pour les binômes. Réalisé en binôme.
+            </p>
+            <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
+          </article>
+
+          <article class="sae-card sae-card--stage"
+            data-title="Stage LEAD/CNRS — Administration serveur distant Linux"
+            data-semester="Stage S4"
+            data-desc="<p>Administration d'un serveur distant Linux dans un laboratoire de recherche : connexion SSH via VPN (EduVPN), port forwarding avec Bitvise SSH, synchronisation SFTP avec VS Code, sessions graphiques X2GO. Déploiement de l'interface web sur serveur de calcul distant. Projet individuel.</p>"
+            data-detail="<p>L&apos;environnement de travail imposait une infrastructure distante : connexion VPN obligatoire, accès SSH au serveur de calcul, trois ports forwardés simultanément (8000 frontend, 8080 API, 2222 VS Code). La synchronisation du code se faisait via SFTP. Le déploiement sur le serveur nécessitait de comprendre les implications d&apos;un développement sur machine distante — notamment la problématique des appels API depuis le navigateur client vers un serveur Uvicorn distant, résolue par un second port forwarding. Cette expérience m&apos;a confronté concrètement à l&apos;administration réseau en conditions réelles.</p>"
+            data-traces='[{"icon":"🔌","title":"Trace 1 — Configuration Bitvise SSH","desc":"Capture de la configuration des ports dans Bitvise SSH montrant les trois redirections de ports actives (frontend, API, VS Code).","file":"traces/trace-stage-c3-1.png"},{"icon":"📄","title":"Rapport de stage","desc":"Rapport de stage complet au LEAD/CNRS — Noé-Yann Chaffard-Kowalewski.","file":"traces/Rapport_de_stage_au_LEAD_-_Noé-Yann_Chaffard-Kowalewski.pdf"}]'>
+            <div class="sae-card__semester">
+              <span class="tag">Stage S4</span>
+              <span class="tag tag--stage">Stage</span>
+            </div>
+            <h3 class="sae-card__title">Stage LEAD/CNRS — Administration serveur distant Linux</h3>
+            <p class="sae-card__desc">
+              Administration d'un serveur distant Linux dans un laboratoire de recherche :
+              connexion SSH via VPN (EduVPN), port forwarding avec Bitvise SSH, synchronisation
+              SFTP avec VS Code, sessions graphiques X2GO. Déploiement de l'interface web sur
+              serveur de calcul distant. Projet individuel.
             </p>
             <span class="sae-card__cta" aria-hidden="true">Voir le détail <span class="sae-card__cta-arrow">→</span></span>
           </article>
